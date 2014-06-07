@@ -62,6 +62,13 @@ module.exports = (grunt) ->
             ]
             dest: 'dist/vendor/css/'
           }
+          # bower fonts dependencies
+          {
+            expand: true
+            flatten: true
+            src: 'bower_components/bootstrap/fonts/*.*'
+            dest: 'dist/vendor/fonts/'
+          }
           # bower javascripts dependencies
           {
             expand: true
