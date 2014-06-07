@@ -33,7 +33,7 @@
   <script src="vendor/javascripts/jquery.min.js"></script>
   <script src="vendor/javascripts/modernizr.min.js"></script>
   <script src="vendor/javascripts/bootstrap.min.js"></script>
-  <script src="vendor/javascripts/prettify.min.js"></script>
+  <script src="vendor/javascripts/highlight.min.js"></script>
   <script src="assets/javascripts/commons.min.js"></script>
   <!-- @if NODE_ENV='production' -->
   <script type="text/javascript">
@@ -152,7 +152,6 @@
         </div>
         <!-- end slide1 -->
 
-
         <!-- begin slide2 -->
         <div class="slide">
           <div class="row-fluid">
@@ -162,10 +161,10 @@
             <div class="col-xs-12 col-xs-offset-1">
               <strong>Sample simulation</strong>
 
-              <div class="prettyprint-container" style="height:180px;">
-<pre class="prettyprint lang-scala linenums">
-class GatlingDebugSimulation extends Simulation {
- 
+              <div class="highlight-container">
+                <!-- @formatter:off --><pre><code class="scala">
+class SampleSimulation extends Simulation {
+
   val scn = scenario("Gatling")
     .group("Creation process") {
       exec {
@@ -179,20 +178,20 @@ class GatlingDebugSimulation extends Simulation {
           .check(css("div.alert-message").exists)
       }
     }
- 
+
   val baseHttpConf = http
     .baseURL("http://localhost:9000")
     .disableAutoReferer
- 
+
   val httpConf = baseHttpConf
     .acceptEncodingHeader("")
- 
+
   setUp(
     scn.inject(
       atOnce(1.user)))
     .protocols(httpConf)
     .pauses(UniformPercentage(0.6))
-}</pre>
+}</code></pre><!-- @formatter:on -->
               </div>
             </div>
           </div>

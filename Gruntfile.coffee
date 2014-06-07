@@ -79,8 +79,7 @@ module.exports = (grunt) ->
               'html5shiv/*.min.js'
               'modernizr/*.min.js'
               'pie/*.min.js'
-              'prettify/lang-scala.js'
-              'prettify/prettify.min.js'
+              'highlight/highlight.min.js'
             ]
             dest: 'dist/vendor/javascripts/'
           }

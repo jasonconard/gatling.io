@@ -1,0 +1,37 @@
+@import 'variables';
+
+.highlight-container {
+  overflow: auto;
+
+  pre {
+    background-color: white;
+    border: none;
+    height: 180px;
+  }
+}
+
+.hljs {
+  color: @logo-middle-grey;
+  display: block;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-change,
+.hljs-winutils,
+.hljs-flow {
+  color: @logo-middle-green;
+}
+
+.hljs-number {
+  color: @logo-light-green;
+}
+
+.hljs-string {
+  color: @logo-orange;
+}
+
+.hljs-keyword,
+.hljs-title {
+  font-weight: bold;
+}
