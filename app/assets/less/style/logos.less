@@ -1,0 +1,40 @@
+#logos {
+  position: relative;
+  left: 0;
+  top: 0;;
+  width: 100%;
+  height: 87px;
+  background: url(../images/logos-bg.png) left top no-repeat;
+  margin: 30px 0 0 -16px;
+  padding: 0 0 0 20px;
+
+  strong {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    background: #DF7700;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 2px 10px;
+    height: 20px;
+    display: block;
+    text-align: center;
+
+    font-family: "Maven Pro", sans-serif;
+
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  a:hover + .quote,
+  .quote:hover {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+}

@@ -1,67 +1,97 @@
 #logos {
-  height:auto;
-  background:#eee;
-  text-align:center;
-  width:90%;
-  margin:10px auto;
+  height: auto;
+  background: #eee;
+  text-align: center;
+  width: 90%;
+  margin: 10px auto;
 }
-#paddles .span4 { height:auto; min-height:auto; }
-html>body #paddles .span4 { height:auto; min-height:0; }
 
-#header nav {
-
-  position:relative;
-  left:0px;
-  top:0;
-  width:100%;
-  display:block;
-  clear:both;;
+#paddles .span4 {
+  height: auto;
+  min-height: auto;
 }
+
+html > body #paddles .span4 {
+  height: auto;
+  min-height: 0;
+}
+
 ul#header-zone {
-
-  position:relative;
-  display:block;
-  width:100%;
-  clear:both;
-  background:none;
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+  background: none;
 }
-#header a.logo:link, #header a.logo:visited, #header a.logo:hover {
 
-  position:relative;
-  left:0;
-  top:0;
-  width:100%;
-  display:block;
-  clear:both;
-}
 #header {
-  height:auto;
-  background:#e8e7e2;
+  height: auto;
+  background: #e8e7e2;
+
+  a.logo:link,
+  a.logo:visited,
+  a.logo:hover {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+
+  nav {
+    position: relative;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    display: block;
+    clear: both;
+
+    ol li {
+      border: none;
+    }
+  }
 }
-#header nav ol li { border:none; }
-#slider .arrow-left, #slider .arrow-right {
-  top:5px;
-  width:24px;
-  height:24px;
-}
-#slider .arrow-left {
-  left:5px;
-  background:url(../../../img/slider-arrow-left-off-small.png) left top no-repeat;
-}
-#slider .arrow-left:hover {	background:url(../../../img/slider-arrow-left-on-small.png) left top no-repeat; }
-#slider .arrow-right {
-  right:5px;
-  background:url(../../../img/slider-arrow-right-off-small.png) left top no-repeat;
-}
-#slider .arrow-right:hover { background:url(../../../img/slider-arrow-right-on-small.png) left top no-repeat; }
-#slider .slide div > .span4 img,
-#slider .slide div > .span5 img,
-#slider .slide div > .span6 img,
-#slider .slide div > .span7 img,
-#slider .slide div > .span8 img,
-#slider .slide div > .span9 img,
-#slider .slide div > .span10 img,
-#slider .slide div > .span11 img,
-#slider .slide div > .span12 img {
-  display:none;
+
+#slider {
+  .arrow-left,
+  .arrow-right {
+    top: 5px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .arrow-left {
+    left: 5px;
+    background: url(../images/slider-arrow-left-off-small.png) left top no-repeat;
+
+    &:hover {
+      background: url(../images/slider-arrow-left-on-small.png) left top no-repeat;
+    }
+  }
+
+  .arrow-right {
+    right: 5px;
+    background: url(../images/slider-arrow-right-off-small.png) left top no-repeat;
+
+    &:hover {
+      background: url(../images/slider-arrow-right-on-small.png) left top no-repeat;
+    }
+  }
+
+  .slide div {
+    & > .span4,
+    & > .span5,
+    & > .span6,
+    & > .span7,
+    & > .span8,
+    & > .span9,
+    & > .span10,
+    & > .span11,
+    & > .span12 {
+      img {
+        display: none;
+      }
+    }
+  }
 }

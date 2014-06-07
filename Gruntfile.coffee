@@ -32,7 +32,7 @@ module.exports = (grunt) ->
         ]
 
     copy:
-      main:
+      config:
         files: [
           # config
           {
@@ -41,6 +41,9 @@ module.exports = (grunt) ->
             src: 'config/*'
             dest: 'dist/'
           }
+        ]
+      commons:
+        files: [
           # images
           {
             expand: true
@@ -70,17 +73,18 @@ module.exports = (grunt) ->
             ]
             dest: 'dist/vendor/javascripts/'
           }
-          # manual dependencies
+          # manual css dependencies
           {
             expand: true
             flatten: true
-            cwd: 'app/vendor/'
-            src: [
-              'html5shiv/*.min.js'
-              'modernizr/*.min.js'
-              'pie/*.min.js'
-              'highlight/highlight.min.js'
-            ]
+            src: 'app/vendor/css/PIE.htc'
+            dest: 'dist/vendor/css/'
+          }
+          # manual javascripts dependencies
+          {
+            expand: true
+            flatten: true
+            src: 'app/vendor/javascripts/*.min.js'
             dest: 'dist/vendor/javascripts/'
           }
           # html
@@ -116,6 +120,6 @@ module.exports = (grunt) ->
 
   # Default task
 
-  grunt.registerTask('default', ['clean', 'uglify', 'less:development', 'copy', 'preprocess:html'])
+  grunt.registerTask('default', ['clean', 'uglify', 'less:development', 'copy:commons', 'preprocess:html'])
 
   return

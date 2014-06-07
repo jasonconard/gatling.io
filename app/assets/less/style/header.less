@@ -1,0 +1,141 @@
+#header {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 115px;
+  overflow: hidden;
+
+  a.logo:link,
+  a.logo:visited,
+  a.logo:hover {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 283px;
+    height: 95px;
+    background: url(../images/gatling.png) left top no-repeat;
+    display: block;
+  }
+
+  ul#header-zone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 335px;
+    height: 41px;
+    background: url(../images/header-zone-bg.jpg) left top no-repeat;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 40px;
+    z-index: 100;
+
+    li {
+      position: relative;
+      left: 0;
+      top: 0;
+      float: left;
+      margin: 0 3px;
+      color: #777;
+
+      &.first {
+        margin-top: 8px;
+      }
+
+      a:link .on,
+      a:visited .on {
+        display: none;
+      }
+
+      a:hover .on {
+        display: block;
+      }
+
+      a:link .off,
+      a:visited .off {
+        display: block;
+      }
+
+      a:hover .off {
+        display: none;
+      }
+
+      a:link p,
+      a:visited p,
+      a:hover p {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        text-align: center;
+        color: #fff;
+        background: #85837e;
+        padding: 3px 9px;
+        line-height: 1em;
+        font-size: 0.9em;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      a:hover p {
+        display: block;
+      }
+    }
+  }
+
+  nav {
+    position: absolute;
+    left: 310px;
+    top: 85px;
+
+    ol {
+      width: 100%;
+      list-style-type: none;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+        left: 0;
+        top: 0;
+        float: left;
+        margin: 0 0 3px 0;
+        padding: 0 3px 0 5px;
+        border-left: solid 1px #a4a39a;
+
+        &.first {
+          border: none;
+        }
+
+        a:link,
+        a:visited,
+        a:hover {
+          position: relative;
+          left: 0;
+          top: 0;;
+          padding: 3px 8px;
+          background: #a4a39a;
+          color: #fff;
+          text-decoration: none;
+
+          -webkit-transition: all .2s ease-in;
+          -moz-transition: all .2s ease-in;
+          -o-transition: all .2s ease-in;
+          transition: all .2s ease-in;
+
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+
+          behavior: url(../../vendor/css/PIE.htc);
+        }
+
+        a:hover {
+          background: #8a8982;
+        }
+      }
+    }
+  }
+}
