@@ -1,6 +1,7 @@
 @import 'variables';
 
 #header {
+  font-size: 16px;
   height: @header-height;
 
   .content {
@@ -9,13 +10,15 @@
     position: relative;
   }
 
-  a.logo:link,
-  a.logo:visited,
-  a.logo:hover {
-    background: url(../images/gatling.png) left top no-repeat;
-    display: block;
-    height: @header-height;
-    width: @logo-width;
+  a.logo {
+    &:link,
+    &:visited,
+    &:hover {
+      background: url(../images/gatling.png) left top no-repeat;
+      display: block;
+      height: @header-height;
+      width: @logo-width;
+    }
   }
 
   nav {
@@ -30,31 +33,58 @@
       padding: 0;
 
       li {
-        a:link,
-        a:visited,
-        a:hover {
-          border-top: 2px solid transparent;
-          color: @logo-middle-grey;
-          display: block;
-          font-weight: bold;
-          height: @header-height;
-          line-height: @header-height - 5;
-          padding: 0 8px;
-          text-decoration: none;
+        a {
+          &:link,
+          &:visited,
+          &:hover {
+            border-top: 2px solid transparent;
+            color: @logo-middle-grey;
+            display: block;
+            font-weight: bold;
+            height: @header-height;
+            line-height: @header-height - 5;
+            padding: 0 8px;
+            text-decoration: none;
 
-          -webkit-transition: all .2s ease-in;
-          -moz-transition: all .2s ease-in;
-          -o-transition: all .2s ease-in;
-          transition: all .2s ease-in;
+            -webkit-transition: all .2s ease-in;
+            -moz-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            transition: all .2s ease-in;
 
-          behavior: url(../../vendor/css/PIE.htc);
-        }
+            behavior: url(../../vendor/css/PIE.htc);
+          }
 
-        a:hover {
-          color: @logo-dark-grey;
-
-          &.link {
+          &:hover {
+            color: @logo-dark-grey;
             border-top: 2px solid @logo-orange;
+          }
+
+          &.icon {
+            width: 44px;
+          }
+
+          &.icon-github {
+            background: url(../images/icon_github_off.png) no-repeat 7px 30px;
+
+            &:hover {
+              background: url(../images/icon_github_on.png) no-repeat 7px 30px;
+            }
+          }
+
+          &.icon-twitter {
+            background: url(../images/icon_twitter_off.png) no-repeat 7px 30px;
+
+            &:hover {
+              background: url(../images/icon_twitter_on.png) no-repeat 7px 30px;
+            }
+          }
+
+          &.icon-googlegroup {
+            background: url(../images/icon_googlegroup_off.png) no-repeat 7px 30px;
+
+            &:hover {
+              background: url(../images/icon_googlegroup_on.png) no-repeat 7px 30px;
+            }
           }
         }
       }
