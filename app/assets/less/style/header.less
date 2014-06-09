@@ -1,7 +1,6 @@
 @import 'variables';
 
 #header {
-  font-size: 16px;
   height: @header-height;
 
   .content {
@@ -60,30 +59,33 @@
           }
 
           &.icon {
-            width: 44px;
+            width: 40px;
           }
 
+          @position-x: 8px;
+          @position-y: 32px;
+
           &.icon-github {
-            background: url(../images/icon_github_off.png) no-repeat 7px 30px;
+            background: url(../images/icon-github-off.png) no-repeat @position-x @position-y;
 
             &:hover {
-              background: url(../images/icon_github_on.png) no-repeat 7px 30px;
+              background: url(../images/icon-github-on.png) no-repeat @position-x @position-y;
             }
           }
 
           &.icon-twitter {
-            background: url(../images/icon_twitter_off.png) no-repeat 7px 30px;
+            background: url(../images/icon-twitter-off.png) no-repeat @position-x @position-y;
 
             &:hover {
-              background: url(../images/icon_twitter_on.png) no-repeat 7px 30px;
+              background: url(../images/icon-twitter-on.png) no-repeat @position-x @position-y;
             }
           }
 
           &.icon-googlegroup {
-            background: url(../images/icon_googlegroup_off.png) no-repeat 7px 30px;
+            background: url(../images/icon-googlegroup-off.png) no-repeat @position-x @position-y;
 
             &:hover {
-              background: url(../images/icon_googlegroup_on.png) no-repeat 7px 30px;
+              background: url(../images/icon-googlegroup-on.png) no-repeat @position-x @position-y;
             }
           }
         }
