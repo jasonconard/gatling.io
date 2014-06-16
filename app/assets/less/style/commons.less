@@ -1,23 +1,17 @@
 @import 'variables';
 
 body {
-  background: @default-background url(../images/body-bg.jpg) center @header-height no-repeat;
+  background: @default-background;
   color: @default-color;
-  font-family: Arial, Verdana, Tahoma, sans-serif;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
   min-width: 790px;
 }
 
-a {
-  &:link,
-  &:visited,
-  &:hover {
-    color: @logo-orange;
-    text-decoration: none;
-  }
-}
-
+a:link,
+a:visited,
 a:hover {
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
 }
 
 a img {
@@ -30,17 +24,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-.content {
+header .content,
+section .content-wrapper,
+footer .content {
   margin: 0 auto;
   max-width: 900px;
   width: 100%;
 }
 
-#page {
-  margin-top: 25px;
-
-  .content {
-    background: white;
-    padding-bottom: 20px;
-  }
+section .content-wrapper {
+  padding: 0 15px;
 }

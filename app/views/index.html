@@ -68,202 +68,130 @@
   </section>
 </header>
 
-<section id="page">
-  <section class="content">
-
-    <div id="slider">
-
-      <div class="arrow-left"></div>
-      <div class="arrow-right"></div>
-      <div class="anchors"></div>
-
-      <div class="slides">
-
-        <!-- begin slide1 -->
-        <div class="slide">
-          <div class="row-fluid">
-            <div class="col-xs-5"><img src="assets/images/img1.png" alt="Gatling"/></div>
-            <div class="col-xs-7">
-              <h3>Gatling</h3>
-              <strong>is an open-source load testing<br/>framework
-                <small>based on Scala, Akka &amp; Netty</small>
-              </strong>
-
-              <div class="row-fluid" style="margin-top:15px;">
-                <div class="col-xs-6"><span><img src="assets/images/icon-high-performances.png"
-                                                 alt="High performances"/></span>&nbsp;High
-                  performances
-                </div>
-                <div class="col-xs-6"><span><img src="assets/images/icon-http-support.png" alt="HTTP support"/></span>&nbsp;HTTP
-                  support
-                </div>
-              </div>
-              <div class="row-fluid">
-                <div class="col-xs-6"><span><img src="assets/images/icon-simple-concepts.png"
-                                                 alt="Simple concepts"/></span>&nbsp;Simple
-                  concepts
-                </div>
-                <div class="col-xs-6"><span><img src="assets/images/icon-scenario-recorder.png"
-                                                 alt="Scenario recorder"/></span>&nbsp;Scenario
-                  recorder
-                </div>
-              </div>
-              <div class="row-fluid">
-                <div class="col-xs-6"><span><img src="assets/images/icon-dsl.png" alt="DSL"/></span>&nbsp;A DSL to
-                  describe
-                  scenarios
-                </div>
-                <div class="col-xs-6"><span><img src="assets/images/icon-reports.png" alt="Reports"/></span>&nbsp;Meaningful
-                  reports
-                </div>
-              </div>
-
-              <div class="row-fluid" style="margin-top:15px;">
-                <span><span onclick="slideTo(1);" class="btn-gatling">View DSL<i class="icon-arrow-gatling"></i></span></span>
-                <span><span onclick="slideTo(2);" class="btn-gatling">View Reports<i
-                  class="icon-arrow-gatling"></i></span></span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- end slide1 -->
-
-        <!-- begin slide2 -->
-        <div class="slide">
-          <div class="row-fluid">
-            <div class="col-xs-offset-1"><h3>DSL</h3></div>
-          </div>
-          <div class="row-fluid">
-            <div class="col-xs-12 col-xs-offset-1">
-              <strong>Sample simulation</strong>
-
-              <div class="highlight-container">
-                <!-- @formatter:off --><pre><code class="scala">
-class SampleSimulation extends Simulation {
-
-  val scn = scenario("Gatling")
-    .group("Creation process") {
-      exec {
-        http("index").get("/")
-      }.exec {
-        http("new").get("/computers/new")
-      }.pause(3.seconds).exec {
-        http("create")
-          .post("/computers")
-          .param("name", "Gatling Stress Tool")
-          .check(css("div.alert-message").exists)
-      }
-    }
-
-  val baseHttpConf = http
-    .baseURL("http://localhost:9000")
-    .disableAutoReferer
-
-  val httpConf = baseHttpConf
-    .acceptEncodingHeader("")
-
-  setUp(
-    scn.inject(
-      atOnce(1.user)))
-    .protocols(httpConf)
-    .pauses(UniformPercentage(0.6))
-}</code></pre><!-- @formatter:on -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end slide2 -->
-
-        <!-- begin slide3 -->
-        <div class="slide">
-          <div class="row-fluid">
-            <div class="col-xs-offset-1"><h3>Reports</h3></div>
-            <div class="col-xs-5 col-xs-offset-1">
-              <img src="assets/images/request_diagram_resized.png"/>
-            </div>
-            <div class="col-xs-6">
-              <img src="assets/images/request_per_second_graph_resized.png"/>
-            </div>
-          </div>
-        </div>
-        <!-- end slide3 -->
-      </div>
+<section id="title" class="content">
+  <div class="content-wrapper">
+    <div class="title-content">
+      <img src="assets/images/gatling-nb.png" alt="Gatling">
+      is an open-source load testing framework based on
+      <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>
     </div>
 
-    <div id="logos">
-      <strong>THEY USE GATLING</strong>
-
+    <div class="col-xs-7">
       <div class="row-fluid">
-        <div class="col-xs-2"><a href="#"><img src="assets/images/logo-ticketfly.png" alt="TICKET FLY"/></a></div>
-        <div class="col-xs-2"><a href="#"><img src="assets/images/logo-gilt.png" alt="GILT"/></a></div>
-        <div class="col-xs-2"><a href="#"><img src="assets/images/logo-abiquo.png" alt="ABIQUO"/></a></div>
-        <div class="col-xs-2"><a href="#"><img src="assets/images/logo-silverpeas.png" alt="SILVERPEAS"/></a></div>
-        <div class="col-xs-2"><a href="#"><img src="assets/images/logo-ezakus.png" alt="EZAKUS"/></a></div>
-        <div class="col-xs-2"><a href="#"><img src="assets/images/logo-shutterfly.png" alt="SHUTTERFLY"/></a></div>
+        <div class="col-xs-6">
+          <i class="glyphicon glyphicon-stats"></i>
+          <span>High performances</span>
+        </div>
+        <div class="col-xs-6">
+          <i class="glyphicon glyphicon-globe"></i>
+          <span>HTTP support</span>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="col-xs-6">
+          <i class="glyphicon glyphicon-exclamation-sign"></i>
+          <span>Simple concepts</span>
+        </div>
+        <div class="col-xs-6">
+          <i class="glyphicon glyphicon-record"></i>
+          <span>Scenario recorder</span>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="col-xs-6">
+          <i class="glyphicon glyphicon-tasks"></i>
+          <span>A DSL to describe scenarios</span>
+        </div>
+        <div class="col-xs-6">
+          <i class="glyphicon glyphicon-eye-open"></i>
+          <span>Meaningful reports</span>
+        </div>
       </div>
     </div>
+    <div class="col-xs-5">
+      <img src="assets/images/img1.png" alt="Gatling">
+    </div>
+  </div>
+</section>
 
-    <div id="paddles">
-      <div class="row-fluid">
+<section id="charts" class="content">
+  <div class="content-wrapper">
 
-        <div class="col-xs-4">
-          <section id="paddle-twitter" class="paddle">
+  </div>
+</section>
 
-            <header class="header"><h3><a href="https://twitter.com/GatlingTool">Gatling on twitter</a></h3></header>
+<section id="logos" class="content">
+  <div class="content-wrapper">
+    <div class="row-fluid">
+      <div class="col-xs-2"><a href="#"><img src="assets/images/logo-ticketfly.png" alt="TICKET FLY"/></a></div>
+      <div class="col-xs-2"><a href="#"><img src="assets/images/logo-gilt.png" alt="GILT"/></a></div>
+      <div class="col-xs-2"><a href="#"><img src="assets/images/logo-abiquo.png" alt="ABIQUO"/></a></div>
+      <div class="col-xs-2"><a href="#"><img src="assets/images/logo-silverpeas.png" alt="SILVERPEAS"/></a></div>
+      <div class="col-xs-2"><a href="#"><img src="assets/images/logo-ezakus.png" alt="EZAKUS"/></a></div>
+      <div class="col-xs-2"><a href="#"><img src="assets/images/logo-shutterfly.png" alt="SHUTTERFLY"/></a></div>
+    </div>
+  </div>
+</section>
 
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/GatlingTool"
-               data-widget-id="370196467568226304">Tweets
-              de @GatlingTool</a>
-            <script>!function (d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-              if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document, "script", "twitter-wjs");</script>
+<section id="paddles" class="content">
+  <div class="content-wrapper">
+    <div class="row-fluid">
 
-            <footer class="footer"><a href="#">Join the conversation</a></footer>
-          </section>
-        </div>
+      <div class="col-xs-4">
+        <section id="paddle-twitter" class="paddle">
 
-        <div id="span-news" class="col-xs-4">
-          <section id="paddle-news" class="paddle">
+          <header class="header"><h3><a href="https://twitter.com/GatlingTool">Gatling on twitter</a></h3></header>
 
-            <header><h3>Gatling news</h3></header>
+          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/GatlingTool"
+             data-widget-id="370196467568226304">Tweets
+            de @GatlingTool</a>
+          <script>!function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = p + "://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          }(document, "script", "twitter-wjs");</script>
 
-            <section class="first">
-              <table>
-                <tr>
-                  <td><a href="#"><img src="assets/images/img-news1.png" alt=""/></a></td>
-                  <td>Coming soon...</td>
-                </tr>
-              </table>
-              <footer></footer>
-            </section>
-          </section>
-        </div>
+          <footer class="footer"><a href="#">Join the conversation</a></footer>
+        </section>
+      </div>
 
-        <div class="col-xs-4">
-          <section id="paddle-text" class="paddle">
-            <header><h3>Professional Services</h3></header>
-            <section>
-              <table>
-                <tr>
-                  <td><img src="assets/images/professional-services.png" alt="Professionnal Services"/></td>
-                  <td><p><b>Coming soon...</b></p></td>
-                </tr>
-              </table>
-            </section>
+      <div id="span-news" class="col-xs-4">
+        <section id="paddle-news" class="paddle">
+
+          <header><h3>Gatling news</h3></header>
+
+          <section class="first">
+            <table>
+              <tr>
+                <td><a href="#"><img src="assets/images/img-news1.png" alt=""/></a></td>
+                <td>Coming soon...</td>
+              </tr>
+            </table>
             <footer></footer>
           </section>
-        </div>
+        </section>
+      </div>
+
+      <div class="col-xs-4">
+        <section id="paddle-text" class="paddle">
+          <header><h3>Professional Services</h3></header>
+          <section>
+            <table>
+              <tr>
+                <td><img src="assets/images/professional-services.png" alt="Professionnal Services"/></td>
+                <td><p><b>Coming soon...</b></p></td>
+              </tr>
+            </table>
+          </section>
+          <footer></footer>
+        </section>
       </div>
     </div>
-
-  </section>
+  </div>
 </section>
 
 <footer id="footer">
