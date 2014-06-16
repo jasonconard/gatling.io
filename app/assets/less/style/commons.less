@@ -1,5 +1,10 @@
 @import 'variables';
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background: @default-background;
   color: @default-color;
@@ -24,12 +29,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-header .content,
-section .content-wrapper,
-footer .content {
-  margin: 0 auto;
-  max-width: 900px;
-  width: 100%;
+header, section, footer {
+  .content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+  }
 }
 
 section .content-wrapper {

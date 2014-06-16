@@ -3,7 +3,7 @@
 #header {
   height: @header-height;
 
-  .content {
+  .content-wrapper {
     display: flex;
     height: @header-height;
     position: relative;
@@ -36,7 +36,7 @@
           &:link,
           &:visited,
           &:hover {
-            border-top: 2px solid transparent;
+            border-top: 4px solid transparent;
             color: @logo-middle-grey;
             display: block;
             font-weight: bold;
@@ -55,7 +55,7 @@
 
           &:hover {
             color: @logo-dark-grey;
-            border-top: 2px solid @logo-orange;
+            border-top: 4px solid @logo-orange;
           }
 
           &.icon {
