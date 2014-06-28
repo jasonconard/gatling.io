@@ -10,6 +10,7 @@
   <link rel='shortcut icon' type='image/x-icon' href="assets/images/favicon.ico"/>
 
   <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap-theme.min.css"/>
 
@@ -112,6 +113,87 @@
   </div>
 </section>
 
+<section id="steps">
+  <div class="step">
+    <div class="content-wrapper">
+      <div class="row-fluid">
+        <div class="col-xs-6">
+          <h2><span>W</span>rite code</h2>
+
+          <div class="step-content highlight-container">
+            <!-- @formatter:off --><pre><code class="scala">val scn = scenario("Gatling")
+  .group("Creation process") {
+    exec {
+      http("index").get("/")
+    }.exec {
+      http("new").get("/computers/new")
+    }.pause(3.seconds).exec {
+      http("create")
+        .post("/computers")
+        .param("name", "Gatling Stress Tool")
+        .check(css("div.alert-message").exists)
+    }
+  }</code></pre><!-- @formatter:on -->
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <h2><span>B</span>ootstrap it</h2>
+
+          <div class="step-content highlight-container">
+            <!-- @formatter:off --><pre><code class="scala">val baseHttpConf = http
+  .baseURL("http://localhost:9000")
+  .disableAutoReferer
+
+val httpConf = baseHttpConf
+  .acceptEncodingHeader("")
+
+setUp(
+  scn.inject(
+    atOnce(1.user)))
+  .protocols(httpConf)
+  .pauses(UniformPercentage(0.6))</code></pre><!-- @formatter:on -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="step">
+    <div class="content-wrapper">
+      <div class="row-fluid">
+        <div class="col-xs-6">
+          <h2><span>L</span>aunch it</h2>
+
+          <div class="step-content">
+            Inside your favorite terminal, with:
+            <div class="terminal">[<span class="user">G</span>@<span class="hostname">ling</span> <span
+              class="path">bundle</span> ]$ <span class="command">./gatling.sh</span>
+            </div>
+
+            <div class="disjonction">Or</div>
+
+            <div class="terminal">[<span class="user">G</span>@<span class="hostname">ling</span> <span
+              class="path">maven-project</span> ]$ <span class="command">mvn</span> gatling:execute
+            </div>
+
+            <div class="disjonction">Or</div>
+
+            <div class="terminal">[<span class="user">G</span>@<span class="hostname">ling</span> <span
+              class="path">sbt-project</span> ]$ <span class="command">sbt</span> gatling:test
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <h2><span>C</span>heck the results</h2>
+
+          <div class="step-content">
+            <img src="assets/images/request_per_second_graph_resized.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="logos">
   <div class="row-fluid">
     <div class="content-wrapper">
@@ -131,7 +213,8 @@
 </section>
 
 <footer id="footer">
-  <div class="content-wrapper"></div>
+  <div class="content-wrapper">
+  </div>
 </footer>
 
 </body>
