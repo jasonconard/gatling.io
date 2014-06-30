@@ -1,51 +1,44 @@
-#testimonies {
-  padding: 30px;
+@import 'variables';
 
-  h3 {
-    background: url(../images/puce2.png) left 9px no-repeat;
-    padding-left: 16px;
-    font-size: 1.8em;
-    margin: 3px 0 3px 0;
-    color: #DF7700;
+#testimonials {
+
+  section.row-fluid {
+    background: url(../images/subtle_grunge.png) repeat;
+    box-shadow: inset 0px 10px 8px -8px @inner-shadow-color;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .testimonial {
+    margin-bottom: 40px;
+    margin-top: 40px;
 
-    li {
-      margin-top: 30px;
-      padding-bottom: 15px;
-      border-bottom: solid 1px #eee;
-      color: #555;
-      text-align: justify;
+    .logo,
+    blockquote {
+      display: inline-block;
+      vertical-align: top;
     }
   }
 
+  .logo {
+    -webkit-filter: drop-shadow(2px 3px 4px @border-color);
+    width: 108px;
+  }
+
   blockquote {
-    background: #FDF5EE;
-    margin-bottom: 10px;
-  }
-
-  .left-blockquote {
-    margin-right: 150px;
-    border-right: 2px solid #DF7700;
-    border-left: none;
-  }
-
-  .right-blockquote {
-    margin-left: 150px;
-    border-left: 2px solid #DF7700;
-  }
-
-  .no-border {
+    background-color: white;
     border: none;
-    padding-bottom: 0;
-  }
+    border-bottom: 4px solid @logo-middle-green;
+    box-shadow: 2px 3px 10px 0px @border-color;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0;
+    width: 672px;
 
-  small {
-    color: #999;
-    margin-top: 10px;
-    font-size: 0.6em;
+    &.blockquote-left {
+      margin-right: 20px;
+    }
+
+    &.blockquote-right {
+      margin-left: 20px;
+    }
   }
 }
