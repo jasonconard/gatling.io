@@ -1,9 +1,14 @@
+@import 'variables';
+
 #footer {
-  background: #444;
-  color: #fff;
+  background-color: @dark-background;
+  border-top: 4px solid @logo-middle-grey;
+  box-shadow: 0px -10px 8px -8px @lightened-border-color;
+  color: white;
   height: 280px;
 
-  img {
-    vertical-align: -9px;
+  header.row-fluid {
+    background-color: #555;
+    height: @header-height;
   }
 }
