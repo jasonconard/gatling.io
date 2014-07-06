@@ -6,6 +6,7 @@
   .content-wrapper {
     display: flex;
     height: @header-height;
+    padding: 0 15px;
     position: relative;
   }
 
@@ -17,6 +18,42 @@
       display: block;
       height: @header-height;
       width: @logo-width;
+    }
+  }
+
+  form {
+    padding: 0;
+    margin: 0;
+
+    .form-group {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      border-top: 1px solid white;
+      border-radius: 0;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      height: 28px;
+      -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+      &:focus {
+        border-bottom: 1px solid @logo-middle-grey;
+        border-left: 1px solid @logo-middle-grey;
+        border-top: 1px solid @logo-middle-grey;
+      }
+    }
+
+    .input-group-addon {
+      background-color: @logo-middle-grey;
+      border: none;
+      border-radius: 0;
+      color: white;
     }
   }
 
