@@ -1,6 +1,7 @@
 @import 'variables';
 
-.highlight-container {
+.highlight-container,
+.highlight {
   overflow: auto;
 
   pre {
@@ -8,30 +9,79 @@
     border: none;
     padding: 0;
     margin: 0;
+  }
+}
 
-    code {
+.highlight-container {
+
+  code {
+    font-size: 0.9em;
+  }
+
+  .hljs {
+    color: @logo-middle-grey;
+    display: block;
+  }
+
+  .keyword {
+    color: @logo-middle-green;
+  }
+
+  .number {
+    color: @logo-light-green;
+  }
+
+  .string {
+    color: @logo-orange;
+  }
+
+  .keyword,
+  .title {
+    font-weight: bold;
+  }
+}
+
+.highlight-scala,
+.highlight-text {
+  margin-bottom: 10px;
+
+  .highlight {
+
+    pre {
+      background-color: #fcfcfc;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      color: #666;
       font-size: 0.9em;
+      padding: 5px 10px;
     }
+  }
+}
 
-    .hljs {
-      color: @logo-middle-grey;
-      display: block;
-    }
+.highlight-scala {
 
-    .keyword {
-      color: @logo-middle-green;
-    }
+  .highlight {
 
-    .number {
-      color: @logo-light-green;
-    }
-
-    .string {
+    .s {
       color: @logo-orange;
     }
 
-    .keyword,
-    .title {
+    .c1 {
+      color: @comment-color;
+    }
+
+    .mi {
+      color: @logo-light-green;
+    }
+
+    .k,
+    .kt {
+      color: @logo-middle-green;
+      font-weight: bold;
+    }
+
+    .nc {
+      color: @logo-orange;
       font-weight: bold;
     }
   }

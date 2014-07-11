@@ -4,5 +4,80 @@
   background-color: white;
   box-shadow: inset 0px 10px 8px -8px @inner-shadow-color;
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 40px;
+
+  h1, h2, h3 {
+    color: @logo-orange;
+  }
+
+  h1 {
+    border-bottom: 2px dashed @logo-orange;
+  }
+
+  h4 {
+    text-decoration: underline;
+    padding-bottom: 5px;
+  }
+
+  a.headerlink {
+    color: @logo-light-green;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .literal {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #666;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-size: 0.9em;
+    padding: 2px 4px;
+  }
+
+  .admonition {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+
+    pre {
+      margin-bottom: 5px;
+    }
+
+    ul, ol {
+      margin-bottom: 5px;
+    }
+
+    p.admonition-title {
+      margin: 0px 10px 5px 0px;
+      font-weight: bold;
+    }
+  }
+
+  .note,
+  .warning {
+    border: 1px solid #eee;
+    border-left-width: 4px;
+    border-radius: 4px;
+
+    .admonition-title {
+      font-size: 1.4em;
+    }
+  }
+
+  .note {
+    border-left-color: #5bc0de;
+
+    .admonition-title {
+      color: #5bc0de;
+    }
+  }
+
+  .warning {
+    border-left-color: #f0ad4e;
+
+    .admonition-title {
+      color: #f0ad4e;
+    }
+  }
 }
