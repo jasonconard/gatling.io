@@ -11,7 +11,7 @@
   }
 
   h1 {
-    border-bottom: 2px dashed @logo-orange;
+    border-bottom: 1px solid #eee;
   }
 
   h4 {
@@ -23,6 +23,10 @@
     color: @logo-light-green;
     margin-left: 10px;
     text-decoration: none;
+  }
+
+  form {
+    display: none;
   }
 
   .literal {
@@ -66,18 +70,59 @@
   }
 
   .note {
-    border-left-color: #5bc0de;
+    border-left-color: @note-color;
 
     .admonition-title {
-      color: #5bc0de;
+      color: @note-color;
     }
   }
 
   .warning {
-    border-left-color: #f0ad4e;
+    border-left-color: @warning-color;
 
     .admonition-title {
-      color: #f0ad4e;
+      color: @warning-color;
+    }
+  }
+
+  #search-results {
+
+    h2:first-child + p {
+      border: 1px solid #eee;
+      border-left: 4px solid @warning-color;
+      border-radius: 4px;
+      padding: 6px 12px;
+    }
+
+    ul.search {
+      border: 1px solid #eee;
+      border-left: 4px solid @note-color;
+      border-radius: 4px;
+      margin: 0;
+      padding: 0;
+
+      & > li {
+        background: transparent;
+        border-top: 1px solid #eee;
+        margin: 0;
+        padding: 6px 12px;
+
+        &:first-child {
+          border-top: none;
+        }
+
+        &:nth-child(even) {
+          background-color: @highlight-background-color;
+        }
+
+        a {
+          color: @note-color;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
 }

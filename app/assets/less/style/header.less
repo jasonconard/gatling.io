@@ -10,6 +10,10 @@
     position: relative;
   }
 
+  .container {
+    position: relative;
+  }
+
   a.logo {
     &:link,
     &:visited,
@@ -50,10 +54,17 @@
     }
 
     .input-group-addon {
-      background-color: @logo-middle-grey;
       border: none;
       border-radius: 0;
-      color: white;
+      padding: 0;
+
+      button {
+        border: 1px solid @logo-middle-grey;
+        background-color: @logo-middle-grey;
+        color: white;
+        display: block;
+        padding: 6px 12px;
+      }
     }
   }
 

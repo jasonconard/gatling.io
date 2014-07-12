@@ -18,18 +18,12 @@ module.exports = (grunt) ->
       development:
         options:
           paths: ['app/assets/less']
-        files: [
-          'dist/assets/css/style.css': 'app/assets/less/style/*.less'
-          'dist/assets/css/mobile.css': 'app/assets/less/mobile/*.less'
-        ]
+        files: 'dist/assets/css/style.css': 'app/assets/less/style/*.less'
       production:
         options:
           cleancss: true
           paths: ['app/assets/less']
-        files: [
-          'dist/assets/css/style.min.css': 'app/assets/less/style/*.less'
-          'dist/assets/css/mobile.min.css': 'app/assets/less/mobile/*.less'
-        ]
+        files: 'dist/assets/css/style.min.css': 'app/assets/less/style/*.less'
 
     copy:
       config:
