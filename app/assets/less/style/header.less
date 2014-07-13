@@ -1,31 +1,38 @@
 @import 'variables';
 
+.navbar {
+  border: 0;
+  height: @header-height;
+  margin: 0;
+  min-height: @header-height;
+}
+
 #header {
   height: @header-height;
-
-  .content-wrapper {
-    display: flex;
-    height: @header-height;
-    padding: 0 15px;
-    position: relative;
-  }
+  min-height: @header-height;
 
   .container {
-    position: relative;
+    padding: 0;
   }
 
-  a.logo {
-    &:link,
-    &:visited,
-    &:hover {
-      background: url(../images/gatling.png) left top no-repeat;
-      display: block;
-      height: @header-height;
-      width: @logo-width;
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-toggle {
+    background-color: white;
+    border: 1px solid @inner-shadow-color;
+    border-radius: 0;
+    box-shadow: inset 1px 1px 4px 0 @inner-shadow-color;
+    margin: 10px 15px;
+
+    .icon-bar {
+      background-color: @inner-shadow-color;
+      box-shadow: 1px 1px 4px 0 @inner-shadow-color;
     }
   }
 
-  form {
+  /*form {
     padding: 0;
     margin: 0;
 
@@ -66,73 +73,104 @@
         padding: 6px 12px;
       }
     }
-  }
+  }*/
 
-  nav {
-    float: right;
-    position: absolute;
-    right: 0;
+  .nav {
 
-    ol {
-      display: flex;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    .open {
+      & > a,
+      & > a:hover,
+      & > a:focus {
+        background-color: @highlight-background-color;
+      }
+    }
 
-      li {
-        a {
-          &:link,
-          &:visited,
+    & > li {
+      & > a {
+        &:link,
+        &:visited,
+        &:hover {
+          border-top: 4px solid transparent;
+          color: @logo-middle-grey;
+          display: block;
+          font-weight: bold;
+          height: @header-height;
+          line-height: @header-height - 5;
+          padding: 0 12px;
+          text-decoration: none;
+          transition: all .2s ease-in;
+
+          behavior: url(../../vendor/css/PIE.htc);
+        }
+
+        &:hover {
+          background-color: white;
+          border-top: 4px solid @logo-orange;
+          color: @logo-dark-grey;
+        }
+
+        &:focus {
+          background-color: @highlight-background-color;
+        }
+
+        &.icon {
+          width: 40px;
+        }
+
+        @position-x: 8px;
+        @position-y: 8px;
+
+        &.icon-github {
+          background: url(../images/icon-github-off.png) no-repeat @position-x @position-y;
+
           &:hover {
-            border-top: 4px solid transparent;
-            color: @logo-middle-grey;
-            display: block;
-            font-weight: bold;
-            height: @header-height;
-            line-height: @header-height - 5;
-            padding: 0 8px;
-            text-decoration: none;
-            transition: all .2s ease-in;
-
-            behavior: url(../../vendor/css/PIE.htc);
-          }
-
-          &:hover {
-            border-top: 4px solid @logo-orange;
-            color: @logo-dark-grey;
-          }
-
-          &.icon {
-            width: 40px;
-          }
-
-          @position-x: 8px;
-          @position-y: 8px;
-
-          &.icon-github {
-            background: url(../images/icon-github-off.png) no-repeat @position-x @position-y;
-
-            &:hover {
-              background: white url(../images/icon-github-on.png) no-repeat @position-x @position-y;
-            }
-          }
-
-          &.icon-twitter {
-            background: url(../images/icon-twitter-off.png) no-repeat @position-x @position-y;
-
-            &:hover {
-              background: white url(../images/icon-twitter-on.png) no-repeat @position-x @position-y;
-            }
-          }
-
-          &.icon-googlegroup {
-            background: url(../images/icon-googlegroup-off.png) no-repeat @position-x @position-y;
-
-            &:hover {
-              background: white url(../images/icon-googlegroup-on.png) no-repeat @position-x @position-y;
-            }
+            background: white url(../images/icon-github-on.png) no-repeat @position-x @position-y;
           }
         }
+
+        &.icon-twitter {
+          background: url(../images/icon-twitter-off.png) no-repeat @position-x @position-y;
+
+          &:hover {
+            background: white url(../images/icon-twitter-on.png) no-repeat @position-x @position-y;
+          }
+        }
+
+        &.icon-googlegroup {
+          background: url(../images/icon-googlegroup-off.png) no-repeat @position-x @position-y;
+
+          &:hover {
+            background: white url(../images/icon-googlegroup-on.png) no-repeat @position-x @position-y;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-right {
+    .dropdown-menu {
+      left: 0;
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid @logo-orange;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-width: 100%;
+    padding: 0;
+
+    & > li > a {
+      background-color: @highlight-background-color;
+      color: @logo-middle-grey;
+      font-weight: bold;
+      padding: 6px 12px;
+
+      &:hover {
+        background-image: none;
+        color: @logo-dark-grey;
       }
     }
   }
