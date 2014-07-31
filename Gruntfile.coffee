@@ -98,6 +98,19 @@ module.exports = (grunt) ->
             dest: 'dist/'
           }
         ]
+      lightbox2:
+        files: [
+          {
+            expand: true
+            cwd: 'bower_components/lightbox2/'
+            src: [
+              'css/*.css'
+              'img/**/*.*'
+              'js/lightbox.min.js'
+            ]
+            dest: 'dist/vendor/lightbox2/'
+          }
+        ]
 
     preprocess:
       html:
@@ -123,6 +136,7 @@ module.exports = (grunt) ->
 
   # Default task
 
-  grunt.registerTask('default', ['clean', 'uglify', 'less:development', 'copy:commons', 'preprocess:html'])
+  grunt.registerTask('default',
+    ['clean', 'uglify', 'less:development', 'copy:commons', 'copy:lightbox2', 'preprocess:html'])
 
   return
