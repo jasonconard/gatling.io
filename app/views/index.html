@@ -130,35 +130,26 @@
     <div class="content-wrapper">
       <div class="row-fluid">
         <div class="col-xs-6">
+          <h2><span>R</span>ecord it</h2>
+
+          <div class="step-content">
+            <img src="/assets/images/recorder.png"/>
+          </div>
+        </div>
+        <div class="col-xs-6">
           <h2><span>W</span>rite code</h2>
 
           <div class="step-content highlight-container">
-    <!-- @formatter:off --><pre><code class="scala">val scn = scenario("Gatling")
+            <!-- @formatter:off --><pre><code class="scala">val scn = scenario("Gatling")
     .exec(http("index").get("/"))
     .exec(http("new").get("/computers/new"))
+
     .pause(3 seconds)
+
     .exec(http("create")
       .post("/computers")
       .param("name", "Gatling Stress Tool")
       .check(css("div.alert-message")))</code></pre><!-- @formatter:on -->
-          </div>
-        </div>
-        <div class="col-xs-6">
-          <h2><span>B</span>ootstrap it</h2>
-
-          <div class="step-content highlight-container">
-            <!-- @formatter:off --><pre><code class="scala">val baseHttpConf = http
-  .baseURL("http://localhost:9000")
-  .disableAutoReferer
-
-val httpConf = baseHttpConf
-  .acceptEncodingHeader("")
-
-setUp(
-  scn.inject(
-    atOnce(1.user)))
-  .protocols(httpConf)
-  .pauses(UniformPercentage(0.6))</code></pre><!-- @formatter:on -->
           </div>
         </div>
       </div>
