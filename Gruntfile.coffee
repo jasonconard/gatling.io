@@ -102,6 +102,13 @@ module.exports = (grunt) ->
             src: 'app/views/docs/*.html'
             dest: 'dist/docs/'
           }
+          # html
+          {
+            expand: true
+            flatten: true
+            src: 'app/views/download/*.html'
+            dest: 'dist/download/'
+          }
         ]
 
     preprocess:
