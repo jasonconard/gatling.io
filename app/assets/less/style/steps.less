@@ -27,16 +27,23 @@
     border-bottom: 4px solid @logo-orange;
     box-shadow: 2px 3px 10px 0px @border-color;
     margin-top: 10px;
+    min-height: 200px;
     padding: 10px 15px;
 
-    .disjonction,
-    .terminal {
-      margin-top: 10px;
-    }
-
-    .disjonction {
-      color: @logo-orange;
+    .image-center {
       text-align: center;
+
+      img {
+        margin-bottom: 25px;
+        margin-left: 12px;
+        margin-top: 25px;
+      }
+
+      &.image-last {
+        img {
+          margin-top: 0;
+        }
+      }
     }
   }
 
