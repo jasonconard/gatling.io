@@ -18,12 +18,14 @@ module.exports = (grunt) ->
       development:
         options:
           paths: ['app/assets/less']
-        files: 'dist/assets/css/style.css': 'app/assets/less/style/*.less'
+        files:
+          'dist/assets/css/style.css': 'app/assets/less/style/*.less'
       production:
         options:
           cleancss: true
           paths: ['app/assets/less']
-        files: 'dist/assets/css/style.min.css': 'app/assets/less/style/*.less'
+        files:
+          'dist/assets/css/style.min.css': 'app/assets/less/style/*.less'
 
     copy:
       config:
@@ -91,23 +93,9 @@ module.exports = (grunt) ->
           # html
           {
             expand: true
-            flatten: true
-            src: 'app/views/*.html'
+            cwd: 'app/views/'
+            src: '**/*.html'
             dest: 'dist/'
-          }
-          # html
-          {
-            expand: true
-            flatten: true
-            src: 'app/views/docs/*.html'
-            dest: 'dist/docs/'
-          }
-          # html
-          {
-            expand: true
-            flatten: true
-            src: 'app/views/download/*.html'
-            dest: 'dist/download/'
           }
         ]
 
