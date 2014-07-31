@@ -3,7 +3,7 @@
   "version": "0.1.0-snapshot",
   "dependencies": {
     "bootstrap": "~3.1.1",
-    "jquery": "~1.11.1",
-    "bootstrap-lightbox": "0.6.1"
+    "bootstrap-lightbox": "~0.6.1",
+    "jquery": "~1.11.1"
   }
 }
