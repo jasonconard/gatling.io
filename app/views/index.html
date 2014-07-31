@@ -141,15 +141,15 @@
 
           <div class="step-content highlight-container">
             <!-- @formatter:off --><pre><code class="scala">val scn = scenario("Gatling")
-    .exec(http("index").get("/"))
-    .exec(http("new").get("/computers/new"))
+  .exec(http("index").get("/"))
+  .exec(http("new").get("/computers/new"))
 
-    .pause(3 seconds)
+  .pause(3 seconds)
 
-    .exec(http("create")
-      .post("/computers")
-      .param("name", "Gatling Stress Tool")
-      .check(css("div.alert-message")))</code></pre><!-- @formatter:on -->
+  .exec(http("create")
+    .post("/computers")
+    .param("name", "Gatling Stress Tool")
+    .check(css("div.alert-message")))</code></pre><!-- @formatter:on -->
           </div>
         </div>
       </div>
