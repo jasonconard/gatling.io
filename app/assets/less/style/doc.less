@@ -29,6 +29,28 @@
     display: none;
   }
 
+  .breadcrumb {
+    background-color: transparent;
+    font-size: 1.1em;
+    padding: 0;
+
+    a {
+      border-bottom: 1px solid transparent;
+      padding: 10px 15px;
+    }
+
+    a:link,
+    a:visited,
+    a:hover {
+      color: @logo-orange;
+    }
+
+    a:hover {
+      background-color: @highlight-background-color;
+      border-bottom: 1px solid @logo-orange;
+    }
+  }
+
   .literal {
     background-color: @highlight-background-color;
     border: 1px solid #eee;
