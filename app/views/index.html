@@ -145,16 +145,25 @@
           <h2><span>E</span>dit</h2>
 
           <div class="step-content highlight-container">
-            <!-- @formatter:off --><pre><code class="scala">val scn = scenario("Gatling")
-  .exec(http("index").get("/"))
-  .exec(http("new").get("/computers/new"))
+            <!-- @formatter:off --><pre><code class="scala">
+val scn = scenario("Gatling")
 
-  .pause(3 seconds)
+  .during(1 minute) {
 
-  .exec(http("create")
-    .post("/computers")
-    .param("name", "Gatling Stress Tool")
-    .check(css("div.alert-message")))</code></pre><!-- @formatter:on -->
+    group("Create Process") {
+
+      exec(http("index").get("/"))
+
+      .exec(http("new").get("/computers/new"))
+
+      .pause(3 seconds)
+
+      .exec(http("create").post("/computers")
+        .formParam("name", "Gatling Stress Tool")
+        .check(css("div.alert-message")))
+     }
+  }
+          </code></pre><!-- @formatter:on -->
           </div>
         </div>
       </div>
