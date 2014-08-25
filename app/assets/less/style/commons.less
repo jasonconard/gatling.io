@@ -1,11 +1,14 @@
 @import 'variables';
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  background: @default-background;
   color: @default-color;
   font-family: Arial, Verdana, Tahoma, sans-serif;
-  height: 100%;
-  position: relative;
+  padding-bottom: 100px;
 
   &.home {
     section,
