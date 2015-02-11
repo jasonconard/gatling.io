@@ -4,6 +4,16 @@
   "dependencies": {
     "bootstrap": "~3.1.1",
     "jquery": "~1.11.1",
-    "lightbox2": "~2.7.1"
+    "lightbox2": "~2.7.1",
+    "angular": "1.2.16",
+    "angular-resource": "1.2.16",
+    "angular-cookies": "1.2.16",
+    "angular-sanitize": "1.2.16",
+    "angular-animate": "1.2.16",
+    "angular-touch": "1.2.16",
+    "angular-route": "1.2.16",
+    "font-awesome": "~4.2.0",
+    "bootstrap-sass-official": "~3.2.0",
+    "highlightjs": "~8.4.0"
   }
 }

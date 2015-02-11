@@ -1,0 +1,62 @@
+@import 'variables';
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  color: $default-color;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  padding-bottom: 100px;
+
+  &.home {
+    section,
+    footer {
+      min-width: 790px;
+    }
+
+    .nav {
+      .active {
+        background-color: $highlight-background-color;
+      }
+    }
+  }
+
+  .body-content {
+    padding-top: 48px;
+  }
+}
+
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header, section, footer {
+  .content-wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
+.row-fluid {
+  display: table;
+  min-height: 30px;
+  width: 100%;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}

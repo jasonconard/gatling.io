@@ -17,3 +17,7 @@ build
 # dist
 dist
 *.iml
+
+# cache
+.tmp/*
+.sass-cache/*

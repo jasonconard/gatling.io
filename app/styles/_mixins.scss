@@ -1,0 +1,27 @@
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  ::-moz-placeholder {
+    color: $color;
+  }
+
+  :-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin transition($what: all 200ms ease-out) {
+  -webkit-transition: $what;
+  -moz-transition: $what;
+  -ms-transition: $what;
+  -o-transition: $what;
+  transition: $what;
+}
+
+@mixin box-shadow ($what...) {
+  -webkit-box-shadow: $what;
+  -moz-box-shadow:    $what;
+  box-shadow:         $what;
+}

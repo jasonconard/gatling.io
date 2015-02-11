@@ -1,0 +1,21 @@
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name gatling.io.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of the webcvApp
+ */
+
+var CodeCtrl = function($rootScope, $scope, $timeout) {
+
+  var scalaCode = $('#scala-code').html().trim();
+  var nbLine =  scalaCode.split(/\r\n|\r|\n/).length;
+  $scope.getNbLine = function(){
+    return new Array(nbLine);
+  };
+
+};
+
+angular.module('gatling.io').controller('CodeCtrl', ['$rootScope', '$scope', CodeCtrl]);

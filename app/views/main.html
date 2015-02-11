@@ -1,0 +1,72 @@
+<!-- TITLE SECTION -->
+<section id="title">
+  <div class="content-wrapper">
+    <div class="title-content">
+      <img src="/images/gatling-nb.png" alt="Gatling">
+      <strong>is an open source load testing framework based on
+      Scala, Akka and Netty</strong>
+    </div>
+
+    <div class="col-xs-7">
+      <div class="row-fluid">
+        <i class="glyphicon glyphicon-stats"></i>&nbsp;
+        <strong>High performance: get more virtual users!</strong>
+      </div>
+      <div class="row-fluid">
+        <i class="glyphicon glyphicon-eye-open"></i>&nbsp;
+        <strong>Ready-to-present HTTP reports</strong>
+      </div>
+      <div class="row-fluid">
+        <i class="glyphicon glyphicon-record"></i>&nbsp;
+        <strong>Scenario recorder and developer-friendly DSL</strong>
+      </div>
+      <hr/>
+      <div class="row-fluid text-center">
+        <span class="h3">"Arm yourself for performance"</span>
+      </div>
+    </div>
+    <div class="col-xs-5">
+      <img src="/images/img1.png" alt="Gatling">
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL SERVICES SECTION LINK -->
+<section id="improve">
+  <div class="content-wrapper">
+    <a href="#/services">Boost your business with our professional services</a>
+  </div>
+</section>
+
+<!-- CAROUSEL SECTION -->
+<section id="steps">
+  <div class="container">
+    <!-- CAROUSEL LINKS -->
+    <div class="step">
+      <div class="step-highlight step-{{carouselStep}}"></div>
+      <div class="step-item clickable" ng-click="hardCarouselUpdate(0)">Record</div>
+      <div class="step-item clickable" ng-click="hardCarouselUpdate(1)">Edit</div>
+      <div class="step-item clickable" ng-click="hardCarouselUpdate(2)">Launch</div>
+      <div class="step-item clickable" ng-click="hardCarouselUpdate(3)">Analyze</div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div class="carousel-container">
+      <div class="carousel-content transitionable" id="main-carousel">
+
+        <!-- FIRST SLIDE : RECORD -->
+        <div class="carousel-slide text-center" id="carousel-recorder" ng-include="'views/slides/record.html'"></div>
+
+        <!-- SECOND SLIDE : EDIT -->
+        <div class="carousel-slide" id="carousel-edit" ng-include="'views/slides/edit.html'"></div>
+
+        <!-- THIRD SLIDE : LAUNCH -->
+        <div class="carousel-slide text-center" id="carousel-launch" ng-include="'views/slides/launch.html'"></div>
+
+        <!-- FORTH SLIDE : ANALYZE-->
+        <div class="carousel-slide text-center" id="carousel-analyse" ng-include="'views/slides/analyze.html'"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
