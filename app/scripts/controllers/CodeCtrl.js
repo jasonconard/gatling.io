@@ -8,7 +8,7 @@
  * Controller of the webcvApp
  */
 
-var CodeCtrl = function($rootScope, $scope, $timeout) {
+var CodeCtrl = function($rootScope, $scope) {
 
   var scalaCode = $('#scala-code').html().trim();
   var nbLine =  scalaCode.split(/\r\n|\r|\n/).length;

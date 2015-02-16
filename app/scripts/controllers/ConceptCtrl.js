@@ -19,7 +19,6 @@ var ConceptCtrl = function($rootScope, $scope, $timeout) {
   //-----------------------------------------------//
   //                Local Variables                //
   //-----------------------------------------------//
-  var nbStep = 4;
   var carouselTimeout = null;
 
   //-----------------------------------------------//

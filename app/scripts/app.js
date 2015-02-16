@@ -10,7 +10,11 @@
  * Main module of the application.
  */
 
-var app = angular.module('gatling.io', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch']);
+var app = angular.module('gatling.io',
+    [
+      'ngAnimate','ngCookies','ngResource',
+      'ngRoute','ngSanitize','ngTouch',
+      'angulartics','angulartics.google.analytics']);
 
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
@@ -30,7 +34,4 @@ app.config(['$routeProvider', function ($routeProvider) {
     .otherwise({
       redirectTo: '/'
     });
-}]);
-
-app.run(['$rootScope', '$http', '$window', function($rootScope, $http) {
 }]);

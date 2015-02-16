@@ -8,7 +8,7 @@
  * Controller of the webcvApp
  */
 
-var MainCtrl = function($rootScope, $scope, $location, $timeout) {
+var MainCtrl = function($rootScope, $scope, $location) {
 
   //-----------------------------------------------//
   //                   Watchers                    //
@@ -21,4 +21,4 @@ var MainCtrl = function($rootScope, $scope, $location, $timeout) {
 
 };
 
-angular.module('gatling.io').controller('MainCtrl', ['$rootScope', '$scope', '$location', '$timeout', MainCtrl]);
+angular.module('gatling.io').controller('MainCtrl', ['$rootScope', '$scope', '$location', MainCtrl]);
