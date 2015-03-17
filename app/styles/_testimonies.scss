@@ -2,8 +2,12 @@
 
 .testimonials {
 
-  .logo-full {
+  .logo {
     text-align: center;
+  }
+
+  blockquote {
+    border: none;
   }
 
   aside {
@@ -197,24 +201,11 @@
     text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
   }
 
-  &> section {
+  &> header + section {
     box-shadow: 0px -8px 8px -8px $lightened-inner-shadow-color;
   }
 
   $testimonial-height: 120px;
-
-  .pre-testimonial,
-  .post-testimonial {
-    height: $testimonial-height / 4;
-
-    .col-xs-2 {
-      height: $testimonial-height / 4;
-    }
-  }
-
-  .post-testimonial {
-    height: 30px;
-  }
 
   .testimonial {
     height: $testimonial-height;

@@ -32,7 +32,12 @@ app.config(['$routeProvider', function ($routeProvider) {
       templateUrl: 'views/services.html'
     })
     .when('/testimonials', {
-      templateUrl: 'views/testimonials/klm.html'
+      templateUrl: 'views/testimonials.html'
+    })
+    .when('/testimonials/:testimony.html', {
+      templateUrl: function (params) {
+        return 'views/testimonials/' + params.testimony + '.html';
+      }
     })
     .otherwise({
       redirectTo: '/'
