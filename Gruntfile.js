@@ -250,11 +250,11 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: {
-          '<%= yeoman.dist %>/styles/main.css': ['.tmp/styles/{,*/}*.css'],
-          '<%= yeoman.dist %>/styles/vendor.css': ['.tmp/styles/{,*/}*.css', '.bower_components/**/*.css']
+          '<%= yeoman.dist %>/styles/main.css': ['.tmp/styles/main.css']
         }
       }
     },
+
     imagemin: {
       dist: {
         files: [{
@@ -379,7 +379,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('serve', [
     'compass',
-    'cssmin:dist',
+    //'cssmin:dist',
     'connect:livereload',
     'watch'
   ]);
