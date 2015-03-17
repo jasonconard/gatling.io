@@ -184,11 +184,11 @@
 }
 
 #testimonials {
-  background: url(../../images/subtle_grunge.png) repeat;
+  background-color: white;
   box-shadow: 0px -8px 8px -8px $lightened-inner-shadow-color;
 
   header.row-fluid {
-    background-color: $lightened-background;
+    background-color: $default-background;
   }
 
   h2 {
