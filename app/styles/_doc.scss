@@ -1,6 +1,9 @@
 @import 'variables';
 
-#doc, .doc {
+#doc {
+  background-color: white;
+  box-shadow: inset 0 10px 8px -8px $inner-shadow-color;
+  padding-bottom: 60px;
 
   aside {
     font-size: 14px;
@@ -9,9 +12,6 @@
   .row {
     padding-top: 40px;
   }
-  background-color: white;
-  box-shadow: inset 0px 10px 8px -8px $inner-shadow-color;
-  padding-bottom: 60px;
 
   h1, h2, h3 {
     color: $logo-orange;
@@ -86,7 +86,7 @@
     }
 
     p.admonition-title {
-      margin: 0px 10px 5px 0px;
+      margin: 0 10px 5px 0;
       font-weight: bold;
     }
   }
