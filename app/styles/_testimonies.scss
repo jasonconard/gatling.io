@@ -2,30 +2,13 @@
 
 .testimonials {
 
-  .logo {
-    text-align: center;
-  }
-
-  blockquote {
-    border: none;
-    color: #cd6b00;
-    font-size: 1.2em;
-  }
-
-  aside {
-    font-size: 14px;
-  }
-
-  .row {
-    padding-top: 40px;
-  }
-
   background-color: white;
   box-shadow: inset 0 10px 8px -8px $inner-shadow-color;
   padding-bottom: 60px;
 
   h1, h2, h3 {
     color: $logo-orange;
+    text-transform: capitalize;
   }
 
   h1 {
@@ -46,13 +29,27 @@
     padding-bottom: 5px;
   }
 
+  .logo {
+    text-align: center;
+  }
+
+  .row {
+    padding-top: 40px;
+  }
+
+  blockquote {
+    border: none;
+    color: #cd6b00;
+    font-size: 1.2em;
+  }
+
   p {
     text-align: justify;
   }
 }
 
 #testimonials {
-  background-color: white;
+  background: url(../../images/subtle_grunge.png) repeat;
   box-shadow: 0px -8px 8px -8px $lightened-inner-shadow-color;
   position: static;
 
