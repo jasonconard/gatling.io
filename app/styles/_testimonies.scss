@@ -23,7 +23,6 @@
   background-color: white;
   box-shadow: inset 0 10px 8px -8px $inner-shadow-color;
   padding-bottom: 60px;
-  padding-top: 40px;
 
   h1, h2, h3 {
     color: $logo-orange;
@@ -55,13 +54,14 @@
 #testimonials {
   background-color: white;
   box-shadow: 0px -8px 8px -8px $lightened-inner-shadow-color;
+  position: static;
 
   header.row-fluid {
-    background-color: $default-background;
+    background-color: $logo-orange;
   }
 
   h2 {
-    color: $logo-orange;
+    color: white;
     font-size: 2em;
     font-weight: bold;
     margin: 0;
