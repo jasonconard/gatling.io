@@ -31,12 +31,12 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when('/services', {
       templateUrl: 'views/services.html'
     })
-    .when('/testimonials', {
-      templateUrl: 'views/testimonials.html'
+    .when('/stories', {
+      templateUrl: 'views/stories.html'
     })
-    .when('/testimonials/:testimony.html', {
+    .when('/stories/:story.html', {
       templateUrl: function (params) {
-        return 'views/testimonials/' + params.testimony + '.html';
+        return 'views/stories/' + params.story + '.html';
       }
     })
     .otherwise({
