@@ -344,6 +344,16 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }]
       },
+      doc_vendors: {
+        expand: true,
+        flatten: true,
+        cwd: '.',
+        src: [
+          '<%= yeoman.app %>/vendor/javascripts/modernizr.min.js',
+          'bower_components/bootstrap/dist/js/bootstrap.min.js'
+        ],
+        dest: '<%= yeoman.dist %>/vendor/javascripts/'
+      },
       styles: {
         expand: true,
         cwd: '<%= yeoman.app %>/styles',
@@ -400,6 +410,7 @@ module.exports = function (grunt) {
     'concat',
     'ngmin',
     'copy:dist',
+    'copy:doc_vendors',
    // 'cdnify',
     'cssmin',
     'uglify',
