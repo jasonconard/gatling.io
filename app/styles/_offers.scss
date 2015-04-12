@@ -1,41 +1,102 @@
 @import 'variables';
 
-section.offers {
-  position: relative;
-  z-index: 2;
-  background-color: #fcfbf7;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 10px 8px -8px $inner-shadow-color, 0px 10px 8px -8px $inner-shadow-color;
-  padding: 20px;
+footer.offers {
+  background-color: #efefef;
+  font-size: 1.2em;
+  padding-bottom: 60px;
+  padding-top: 1em;
 
-  .container {
+  .btn-contact {
+    background-color: $logo-orange;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.2em;
+    vertical-align: baseline;
 
-    h1, h2, h3 {
-      color: $logo-orange;
+    &:hover {
+      background-color: $background-orange-light;
     }
-
-    .italic {
-      font-style: oblique;
-
-      text-shadow: 0px 0px rgba(0, 0, 0, 0);
-    }
-  }
-
-  td, th {
-    border: 3px solid #fcfbf7;
-    background-color: #eeeeee;
-    padding: 5px 5px;
-    text-align: center;
-
-    &:last-child {
-      background-color: $background-orange;
-      color: #ffffff;
-      font-weight: bold;
-    }
-  }
-
-  th:first-child{
-    background-color: rgba(0,0,0,0);
   }
 }
 
+#offers {
+
+  .btn-contact {
+    background-color: $logo-middle-green;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+
+    &:hover {
+      background-color: $logo-light-green;
+    }
+  }
+
+  .btn-consulting-form {
+    background-color: $logo-orange;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+
+    &:hover {
+      background-color: $background-orange-light;
+    }
+  }
+
+  table {
+    table-layout: fixed;
+  }
+
+  .fixed-width {
+    width: 20%;
+  }
+
+  thead,
+  tbody {
+    tr {
+      th, td {
+        padding: 4px 8px;
+      }
+
+      th, td {
+        &.sub-title {
+          padding-left: 24px;
+        }
+
+        &.community {
+          font-style: italic;
+          font-weight: normal;
+          border-left: 2px solid $logo-orange;
+          text-align: center;
+        }
+
+        &.silver_gold {
+          background-color: #f9f9f9;
+          border-left: 1px solid $logo-orange;
+          color: $logo-orange;
+          text-align: center;
+        }
+
+        &.platinium {
+          background-color: $logo-orange;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tbody {
+    border-top: 2px solid $logo-orange;
+  }
+
+  table,
+  table + p {
+    margin-top: 40px;
+  }
+}
