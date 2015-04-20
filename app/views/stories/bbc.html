@@ -1,0 +1,103 @@
+<section class="testimonials">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>BBC Gatling Story</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-3 col-sm-offset-0 col-sm-2 col-md-offset-1 col-md-2 logo">
+        <a href="http://www.bbc.com">
+          <img src="/images/logo-bbc.png" alt="BBC"/>
+        </a>
+      </div>
+
+      <div class="col-xs-7 col-sm-offset-0 col-sm-8 col-md-offset-0 col-md-6">
+        <blockquote class="text-right">
+          <p class="quote"><em>&ldquo;We feel that <strong>Gatling encourages collaboration with product teams
+            throughout the load-testing process</strong>.&rdquo;</em></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+        <p>Both the BBC Future Media Load Test Team and various BBC product teams use Gatling as a <strong>core part of
+          our load testing effort</strong>.</p>
+      </div>
+
+      <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+        <h2>Why Gatling?</h2>
+
+        <p>There are <strong>three major factors</strong> that attracted us to Gatling:</p>
+
+        <ol>
+          <li>The HTTP DSL</li>
+          <li>The reporting</li>
+          <li>Its concurrency model</li>
+        </ol>
+
+        <h3>HTTP DSL</h3>
+
+        <p>There are a number of load-test tools that only allow tests to be written in the GUI or through XML
+          files. <strong>We wanted test-scripts that were easily understandable</strong> and that could be committed to
+          a version control system.</p>
+
+        <h3>Reporting</h3>
+
+        <p><strong>The interactive JavaScript reports</strong> that are produced after the test run
+          are <strong>extremely impressive</strong> and product teams have been keen to receive the reports and analyse
+          the results themselves.</p>
+
+        <p>The <strong>integration with Graphite/InfluxDB and Grafana</strong> was also key for us as we are now able to
+          provide <strong>real-time graphing</strong> for product teams to view during the test run.</p>
+
+        <h3>Concurrency Model</h3>
+
+        <p>With a synchronous concurrency model it is necessary to use multiple machines just to achieve several hundred
+          requests per second. Scaling-out can be tricky to manage and costly when running from The Cloud. We have
+          managed to achieve a <strong>high concurrency rate with Gatling using only a modest GNU/Linux
+            box</strong>.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+        <h2>The Story</h2>
+
+        <p>Apart from myself there are two other load-testers in the BBC Future Media Load Test Team who cover an array
+          of application products and services. Our two main tools include Gatling and a proprietary tool.</p>
+
+        <p>We feel that <strong>Gatling encourages collaboration with product teams throughout the load-testing
+          process</strong>. Firstly, performance requirements are written on a wiki, translated into a Gatling test
+          script and then pushed to our <a href="https://github.com/bbc/gatling-load-tests">Github repository</a>. Here
+          the test is reviewed by a member of the product team. This is important because the developers do not need to
+          install a load-test tool or wade through masses of XML in order to review the test. <strong>The DSL can be
+          read by all</strong> and invariably changes are requested by stakeholders when a concrete test is seen.</p>
+
+        <p>We have created <a href="https://github.com/bbc/gatling-load-tests#grafanainfluxdb">Grafana and InfluxDB
+          Docker images</a> that can be run to receive out-of-the-box real-time graphing and metric storage. This allows
+          both ourselves and our product teams to view the progress of the test run and use SQL like queries to retrieve
+          data related to specific time series data.</p>
+
+        <p>The automatic generated reports are tarballed and uploaded to a server for stakeholders to access.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+        <h2>The Future</h2>
+
+        <p>The general tendency towards Cloud deployments has led to a new dynamic with regards to load-testing. There
+          has been a tendency to rely less on a centralised load-test team running on an internal infrastructure towards
+          a model where developers and testers are spinning up instances and running load-tests themselves. Gatling is a
+          perfect fit for this and <strong>we are starting to help product teams run Gatling as part of their Continuous
+          Delivery pipeline</strong> utilising the
+          <a href="https://wiki.jenkins-ci.org/display/JENKINS/Gatling+Plugin">Gatling Jenkins plugin.</a></p>
+      </div>
+    </div>
+  </div>
+</section>

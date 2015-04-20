@@ -31,6 +31,12 @@
 
   .logo {
     text-align: center;
+
+    h2 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+    }
   }
 
   .row {
@@ -88,6 +94,21 @@
     }
   }
 
+  .logo {
+    height: $testimonial-height;
+    text-align: center;
+
+    h2 {
+      color: $logo-orange;
+      font-size: 3em;
+      font-weight: bold;
+      line-height: $testimonial-height;
+      margin: 0;
+      padding: 0;
+      text-shadow: none;
+    }
+  }
+
   blockquote {
     border: none;
     font-size: 1em;
@@ -95,9 +116,15 @@
     padding: 0;
 
     p {
-      line-height: 30px;
       margin: 0;
       padding: 0;
+
+      @media (max-width: 991px) {
+        line-height: 30px;
+      }
+      @media (min-width: 992px){
+        line-height: 60px;
+      }
 
       &:first-child {
         margin-top: 30px;
