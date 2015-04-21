@@ -9,6 +9,9 @@
 
 module.exports = function (grunt) {
 
+  // Get version from version.json
+  var version = require('./version.json').version;
+
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
@@ -143,6 +146,21 @@ module.exports = function (grunt) {
       },
       server: '.tmp'
     },
+
+    preprocess: {
+      options: {
+        context : {
+          version: version
+        }
+      },
+      multifile : {
+        files : {
+          '<%= yeoman.dist %>/views/download.html' : '<%= yeoman.app %>/views/download.html',
+          '<%= yeoman.dist %>/views/docs.html'   : '<%= yeoman.app %>/views/docs.html'
+        }
+      }
+    },
+
 
     // Add vendor prefixed styles
     autoprefixer: {
@@ -415,6 +433,7 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'usemin',
+    'preprocess',
     'htmlmin'
   ]);
 
