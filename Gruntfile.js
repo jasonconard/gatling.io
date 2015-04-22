@@ -11,6 +11,7 @@ module.exports = function (grunt) {
 
   // Get version from version.json
   var version = require('./version.json').version;
+  var devVersion = require('./dev_version.json').devVersion;
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
@@ -150,7 +151,8 @@ module.exports = function (grunt) {
     preprocess: {
       options: {
         context : {
-          version: version
+          version: version,
+          devVersion: devVersion
         }
       },
       multifile : {
