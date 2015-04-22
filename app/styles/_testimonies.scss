@@ -116,15 +116,9 @@
     padding: 0;
 
     p {
+      line-height: 30px;
       margin: 0;
       padding: 0;
-
-      @media (max-width: 991px) {
-        line-height: 30px;
-      }
-      @media (min-width: 992px){
-        line-height: 60px;
-      }
 
       &:first-child {
         margin-top: 30px;
