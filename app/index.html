@@ -37,6 +37,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/lightbox2/js/lightbox.min.js"></script>
     <script src="bower_components/highlightjs/highlight.pack.js"></script>
@@ -47,6 +48,7 @@
     <script src="scripts/controllers/MainCtrl.js"></script>
     <script src="scripts/controllers/ConceptCtrl.js"></script>
     <script src="scripts/controllers/CodeCtrl.js"></script>
+    <script src="scripts/controllers/StoryCtrl.js"></script>
     <!-- endbuild -->
 
     <!-- build:js(.) scripts/oldieshim.js -->
@@ -65,7 +67,7 @@
 
     <div ng-include="'/views/header.html'"></div>
 
-    <div ng-view class="body-content"></div>
+    <div ui-view class="body-content"></div>
 
     <div ng-include="'/views/footer.html'"></div>
 

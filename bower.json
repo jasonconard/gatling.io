@@ -15,6 +15,7 @@
     "font-awesome": "~4.2.0",
     "bootstrap-sass-official": "~3.2.0",
     "highlightjs": "~8.4.0",
-    "angulartics": "~0.17.2"
+    "angulartics": "~0.17.2",
+    "angular-ui-router": "~0.2.14"
   }
 }

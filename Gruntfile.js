@@ -107,6 +107,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           open: true,
+          port: 9009,
           base: '<%= yeoman.dist %>',
           keepalive: true
         }
@@ -410,6 +411,7 @@ module.exports = function (grunt) {
     'compass',
     //'cssmin:dist',
     'connect:livereload',
+    'connect:dist',
     'watch'
   ]);
 
