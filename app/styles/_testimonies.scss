@@ -61,6 +61,19 @@
   p {
     text-align: justify;
   }
+
+  .pager li > a {
+    //background-color: #fff;
+    border: none;
+    border-radius: 0;
+    color: $logo-orange;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $logo-orange;
+      color: white;
+    }
+  }
 }
 
 #carousel-testimonials {
