@@ -2,8 +2,8 @@
   <div class="container">
     <nav>
       <ul class="pager">
-        <li class="previous" ng-class="previousClass" ><a ng-click="onSwitchStory(previous)" href=""><span aria-hidden="true">&larr;</span> Older</a></li>
-        <li class="next" ng-class="nextClass"><a ng-click="onSwitchStory(next)" href="">Newer <span aria-hidden="true">&rarr;</span></a></li>
+        <li ng-show="previous.url" class="previous" ><a ng-click="onSwitchStory(previous.url)" href="">{{previous.title}}<span aria-hidden="true">&larr;</span> </a></li>
+        <li ng-show="next.url" class="next"><a ng-click="onSwitchStory(next.url)" href=""><span aria-hidden="true">&rarr;</span> {{next.title}}</a></li>
       </ul>
     </nav>
    </div>
@@ -11,8 +11,8 @@
   <div class="container">
     <nav>
       <ul class="pager">
-        <li class="previous" ng-class="previousClass" ><a ng-click="onSwitchStory(previous)" href=""><span aria-hidden="true">&larr;</span> Older</a></li>
-        <li class="next" ng-class="nextClass"><a ng-click="onSwitchStory(next)" href="">Newer <span aria-hidden="true">&rarr;</span></a></li>
+        <li ng-show="previous.url" class="previous" ><a ng-click="onSwitchStory(previous.url)" href="">{{previous.title}}<span aria-hidden="true">&larr;</span> </a></li>
+        <li ng-show="next.url" class="next"><a ng-click="onSwitchStory(next.url)" href=""><span aria-hidden="true">&rarr;</span> {{next.title}}</a></li>
       </ul>
     </nav>
   </div>

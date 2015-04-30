@@ -1,6 +1,12 @@
 {
   "stories":[
-    "klm",
-    "bbc"
+    {
+      "url":"klm",
+      "title":"KLM User Story"
+    },
+    {
+      "url":"bbc",
+      "title":"BBC Gatling Story"
+    }
   ]
 }
