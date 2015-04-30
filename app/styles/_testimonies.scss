@@ -43,6 +43,15 @@
     padding-top: 40px;
   }
 
+  &>.container > a {
+    color: black;
+    display: block;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
   blockquote {
     border: none;
     color: #cd6b00;
@@ -54,9 +63,30 @@
   }
 }
 
+#carousel-testimonials {
+
+  a {
+    color: black;
+  }
+
+  .carousel-control {
+    &.left {
+      background-image: linear-gradient(to right, $border-color 0%, rgba(0, 0, 0, 0.0001) 100%);
+    }
+
+    &.right {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, $border-color 100%);
+    }
+  }
+}
+
 #testimonials {
   background-color: #fafafa;
   box-shadow: 0px -8px 8px -8px $lightened-inner-shadow-color;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
 
   header.row-fluid {
     background-color: $logo-orange;
