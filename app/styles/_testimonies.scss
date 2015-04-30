@@ -46,10 +46,6 @@
   &>.container > a {
     color: black;
     display: block;
-
-    &:hover {
-      background-color: #f0f0f0;
-    }
   }
 
   blockquote {
@@ -63,7 +59,6 @@
   }
 
   .pager li > a {
-    //background-color: #fff;
     border: none;
     border-radius: 0;
     color: $logo-orange;
@@ -96,10 +91,6 @@
 #testimonials {
   background-color: #fafafa;
   box-shadow: 0px -8px 8px -8px $lightened-inner-shadow-color;
-
-  &:hover {
-    background-color: #f0f0f0;
-  }
 
   header.row-fluid {
     background-color: $logo-orange;
@@ -175,5 +166,11 @@
         }
       }
     }
+  }
+
+  .quoter {
+    position: absolute;
+    right: 0;
+    top: 60px;
   }
 }
