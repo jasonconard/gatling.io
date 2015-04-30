@@ -406,12 +406,9 @@ module.exports = function (grunt) {
     }
   });
 
-
   grunt.registerTask('serve', [
     'compass',
-    //'cssmin:dist',
     'connect:livereload',
-    'connect:dist',
     'watch'
   ]);
 
@@ -438,6 +435,11 @@ module.exports = function (grunt) {
     'usemin',
     'preprocess',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('testBuild', [
+    'build',
+    'connect:dist'
   ]);
 
   grunt.registerTask('default', [
