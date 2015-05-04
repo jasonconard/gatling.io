@@ -22,6 +22,11 @@ footer.offers {
 
 #offers {
 
+  h2 {
+    margin-bottom: 30px;
+    margin-top: 90px;
+  }
+
   .btn-contact {
     background-color: $logo-middle-green;
     border: none;
@@ -69,7 +74,6 @@ footer.offers {
         }
 
         &.community {
-          font-style: italic;
           font-weight: normal;
           border-left: 2px solid $logo-orange;
           text-align: center;
