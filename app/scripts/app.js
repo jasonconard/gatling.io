@@ -20,28 +20,32 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 
   $stateProvider
     .state('index', {
-      url: "/",
+      url: '/',
       templateUrl: 'views/main.html',
       controller: 'ConceptCtrl'
     })
     .state('docs', {
-      url: "/docs",
+      url: '/docs',
       templateUrl: 'views/docs.html'
     })
     .state('download', {
-      url: "/download",
+      url: '/download',
       templateUrl: 'views/download.html'
     })
     .state('services', {
-      url: "/services",
+      url: '/services',
       templateUrl: 'views/services.html'
       })
+    .state('training', {
+      url: '/services/training',
+      templateUrl: 'views/training.html'
+    })
     .state('stories', {
-      url: "/stories",
+      url: '/stories',
       templateUrl: 'views/stories.html'
     })
     .state('story', {
-      url: "/stories/:story.html",
+      url: '/stories/:story.html',
       templateUrl: "views/stories/skeleton.html",
       controller: 'StoryCtrl'
     })
@@ -51,5 +55,5 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
       }
     });
 
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise('/');
 }]);

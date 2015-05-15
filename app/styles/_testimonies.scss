@@ -8,7 +8,6 @@
 
   h1, h2, h3 {
     color: $logo-orange;
-    text-transform: capitalize;
   }
 
   h1 {
@@ -30,12 +29,39 @@
   }
 
   .logo {
+    margin-bottom: 60px;
     text-align: center;
 
     h2 {
       font-size: 3em;
       font-weight: bold;
       margin: 0;
+    }
+
+    img {
+      height: 60px;
+    }
+
+    p {
+      color: $logo-orange;
+      font-size: 1.4em;
+      height: 30px;
+      line-height: 30px;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .quotation-mark {
+    p:first-child:before {
+      content: open-quote;
+      //margin-right: 10px;
+    }
+
+    p:last-child:after {
+      content: close-quote;
+      //margin-left: 10px;
     }
   }
 
@@ -123,7 +149,20 @@
     .col-xs-2 {
       display: block;
       height: $testimonial-height;
-      line-height: $testimonial-height;
+
+      img {
+        height: $testimonial-height / 2;
+        margin-top: $testimonial-height / 8;
+      }
+
+      p {
+        color: $logo-orange;
+        font-size: 1.4em;
+        height: $testimonial-height / 4;
+        line-height: $testimonial-height / 4;
+        margin: 0;
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -149,12 +188,12 @@
     padding: 0;
 
     p {
-      line-height: 30px;
+      line-height: $testimonial-height / 4;
       margin: 0;
       padding: 0;
 
       &:first-child {
-        margin-top: 30px;
+        margin-top: $testimonial-height / 4;
       }
 
       a {
@@ -171,6 +210,6 @@
   .quoter {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: $testimonial-height / 2;
   }
 }
