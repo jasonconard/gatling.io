@@ -4,7 +4,7 @@
   "DOCUMENTATION": "DOCUMENTATION",
   "PROFESSIONAL_SERVICES": "SERVICE PRO",
   "FOOTER": "Gatling est un outil open source de test de charge utilisant <strong>Scala</strong>, <strong>Akka</strong> et <strong>Netty</strong>",
-  "HOME_HEADER_TITLE": "est un outil open source de test de charge utilisant Scala, Akka et Netty",
+  "HOME_HEADER_TITLE": "est un outil open source de test de charge utilisant <strong>Scala</strong>, <strong>Akka</strong> et <strong>Netty</strong>",
   "HOME_HEADER_SUBTITLE1": "Haute performance",
   "HOME_HEADER_SUBTITLE2": "Des rapports clairs, exhaustifs et dynamiques",
   "HOME_HEADER_SUBTITLE3": "Un Recorder de scénarios et un DSL facile à prendre en main",
@@ -58,7 +58,6 @@
   "PRO_TRAINING_CONTENT2": "Programme d’une journée de formation",
   "PRO_MIGRATION": "Migration de Gatling",
   "PRO_MIGRATION_CONTENT1": "<strong>Profitez de tout le potentiel de Gatling</strong> et migrez vers la dernière version ! <strong>Notre équipe de développement vous aide dans votre migration.</strong>",
-  "PRO_ON_QUOTE": "Services professionnels sur devis",
   "PRO_DEV": "Développement spécifique",
   "PRO_DEV_CONTENT": "Travaillez avec <strong>les experts Gatling!</strong>",
   "PRO_GET_IN_TOUCH": "Une seule adresse pour nous contacter :"
