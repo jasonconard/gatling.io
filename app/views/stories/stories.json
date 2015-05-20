@@ -1,12 +1,16 @@
 {
-  "stories":[
+  "stories": [
     {
-      "url":"klm",
-      "title":"KLM User Story"
+      "url": "klm",
+      "title": "KLM User Story"
     },
     {
-      "url":"media",
-      "title":"User Story within a British Company"
+      "url": "media",
+      "title": "User Story within a British Company"
+    },
+    {
+      "url": "open-xchange",
+      "title": "Open-Xchange User Story"
     }
   ]
 }
