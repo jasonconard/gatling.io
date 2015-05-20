@@ -13,10 +13,11 @@
 var app = angular.module('gatling.io', [
     'ngAnimate', 'ngCookies', 'ngResource',
     'ngSanitize', 'ngTouch', 'ui.router',
-    'angulartics', 'angulartics.google.analytics'
+    'angulartics', 'angulartics.google.analytics',
+    'pascalprecht.translate'
 ]);
 
-app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function ($stateProvider, $urlRouterProvider, $translateProvider) {
 
   $stateProvider
     .state('index', {
@@ -56,4 +57,22 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
     });
 
   $urlRouterProvider.otherwise('/');
+
+  $translateProvider
+      .useStaticFilesLoader({
+        prefix: '../locales/',
+        suffix: '.json'
+      })
+      .determinePreferredLanguage(function () {
+        var language = navigator.language || navigator.userLanguage;
+        switch (language.substring(0,2)){
+          case 'fr' :
+            return 'fr';
+            break;
+
+          default:
+            return 'en';
+            break;
+        }
+      });
 }]);
