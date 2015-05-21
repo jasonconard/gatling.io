@@ -60,5 +60,22 @@
   "PRO_MIGRATION_CONTENT1": "<strong>Profitez de tout le potentiel de Gatling</strong> et migrez vers la dernière version ! <strong>Notre équipe de développement vous aide dans votre migration.</strong>",
   "PRO_DEV": "Développement spécifique",
   "PRO_DEV_CONTENT": "Travaillez avec <strong>les experts Gatling!</strong>",
-  "PRO_GET_IN_TOUCH": "Une seule adresse pour nous contacter :"
+  "PRO_GET_IN_TOUCH": "Une seule adresse pour nous contacter :",
+
+
+  "KLM_TITLE": "KLM",
+  "KLM_QUOTE": "Gatling aide KLM à passer d’un mode d’organisation par projets à <strong>l’intégration continue</strong>",
+  "KLM_QUOTE_AUTHOR": "Consultant senior en test de performance @ KLM",
+  "KLM_SUBTITLE_1": "Vue d'ensemble",
+  "KLM_CONTENT_1": "<p>Gatling aide KLM à passer d’un mode d’organisation par projets à l’intégration continue en rendant possible l’intégration des tests de charge et de performance dans le processus d’intégration continue.</p><p>Conçu comme un outil pour développeurs s’intégrant parfaitement aux outils de développement utilisés chez KLM, Gatling a été rapidement adopté par les développeurs des équipes produit.</p><p>En intégrant les tests de performance à l’intégration continue, les équipes ont un feedback quotidien de la performance durant un rush, afin de détecter et résoudre les problèmes dès le début du processus de développement.</p>",
+  "KLM_SUBTITLE_2": "L’Histoire",
+  "KLM_CONTENT_2": "<p>Chez KLM, il y a plusieurs applications web qui sont cruciales pour notre métier. L’outil de réservation en ligne, par exemple, génère une part importante du chiffre d’affaires totale de la compagnie aérienne.</p><p>Les indisponibilités ou les mauvaises performances de cette application peuvent mener à une baisse inadmissible du chiffre d’affaires. Le fait que des passagers utilisent des applications avec de mauvaises performances, comme pour le check-in sur internet, peut provoquer de longues files d’attente à l’aéroport.</p><p>C’est pourquoi toutes les applications indispensables à notre métier sont testées de manière approfondie avant d’être mis en ligne. Les tests de performance fournissent aussi des données pour le dimensionnement nécessaire des machines.</p>",
+  "KLM_SUBTITLE_3": "Accélérer la mise sur le marché et préserver la qualité",
+  "KLM_CONTENT_3": "<p>Durant les dix dernières années, tous les tests de performance étaient réalisés par une équipe dédiée au test de performance, composée de cinq spécialistes, réalisant des tests pour une centaine de mises en ligne par an. Depuis 2014, KLM a changé son mode d’organisation par projets pour se convertir à l’intégration continue.</p><p>Un des objectifs est d’accélérer la mise sur le marché en augmentant le nombre de mises en ligne, tout en préservant la qualité.</p>",
+  "KLM_SUBTITLE_4": "Une nouvelle approche",
+  "KLM_CONTENT_4": "<p>Cet objectif nécessitait une nouvelle approche : le test de performance devait faire partie du cycle de livraison, par l’automatisation autant que possible de son exécution et de l’analyse des résultats de test. Aussi le test de performance devait-il être adopté par les équipes produit.</p><p>C’est ici que Gatling est entré en jeu. Gatling est un outil conçu pour les développeurs et s’intègre parfaitement avec les outils que nos développeurs utilisent chez KLM, comme Maven ou Bamboo.</p><p>Nous rédigeons les tests Gatling dans un environnement de développement intégré Scala comme IntelliJ ou Eclipse et nous les ajoutons au code source de l’application dans le gestionnaire de sources.</p>",
+  "KLM_SUBTITLE_5": "Un feedback permanent durant le rush",
+  "KLM_CONTENT_5": "<p>Lors de la réalisation de tests de performance, les métriques Gatling sont envoyées dans Graphite, avec les métriques du système d’exploitation et de la Java Virtual Machine des applications testées. Les résultats de test sont ensuite analysés et comparés automatiquement, en utilisant une application de tableau de bord développée en propre. Les tests Gatling peuvent être déclenchés depuis le cycle de développement, donnant un feedback permanent de la performance d’une application durant le rush.</p>",
+  "KLM_SUBTITLE_6": "Gatling, l’outil de test de performance de référence chez KLM",
+  "KLM_CONTENT_6": "<p>Durant les mois précédents, toutes les applications web principales ont migré leurs tests de performance vers Gatling, faisant de fait de Gatling l’outil de test de performance de référence chez KLM.</p>"
 }
