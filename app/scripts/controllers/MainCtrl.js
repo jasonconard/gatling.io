@@ -8,17 +8,15 @@
  * Controller of the webcvApp
  */
 
-var MainCtrl = function($rootScope, $scope, $location) {
+var MainCtrl = function ($rootScope, $scope, $location) {
 
   //-----------------------------------------------//
   //                   Watchers                    //
   //-----------------------------------------------//
 
-  $rootScope.$on('$locationChangeSuccess', function(){
+  $rootScope.$on('$locationChangeSuccess', function () {
     $scope.location = $location.path();
   });
-
-
 };
 
 angular.module('gatling.io').controller('MainCtrl', ['$rootScope', '$scope', '$location', MainCtrl]);
