@@ -4,6 +4,7 @@
   "DOCUMENTATION": "DOCUMENTATION",
   "PROFESSIONAL_SERVICES": "SERVICE PRO",
   "FOOTER": "Gatling est un outil open source de test de charge utilisant <strong>Scala</strong>, <strong>Akka</strong> et <strong>Netty</strong>",
+
   "HOME_HEADER_TITLE": "est un outil open source de test de charge utilisant <strong>Scala</strong>, <strong>Akka</strong> et <strong>Netty</strong>",
   "HOME_HEADER_SUBTITLE1": "Haute performance",
   "HOME_HEADER_SUBTITLE2": "Des rapports clairs, exhaustifs et dynamiques",
@@ -23,6 +24,7 @@
   "HOME_USE_GATLING": "Ils utilisent Gatling",
   "HOME_NEWS_HAPPY_NEW_YEAR": "L’équipe Gatling vous souhaite une bonne année!",
   "HOME_NEWS_VERSION": "Gatling {{version}} est disponible!",
+
   "PRO_TITLE": "Services professionnels",
   "PRO_CONTACT": "Toutes les prestations de services sont réalisées par <strong>l’équipe de développement de Gatling</strong>. Contactez-nous sur",
   "PRO_SUPPORT_DURATION": "Durée",
@@ -62,7 +64,6 @@
   "PRO_DEV_CONTENT": "Travaillez avec <strong>les experts Gatling!</strong>",
   "PRO_GET_IN_TOUCH": "Une seule adresse pour nous contacter :",
 
-
   "KLM_TITLE": "KLM",
   "KLM_QUOTE": "Gatling aide KLM à passer d’un mode d’organisation par projets à <strong>l’intégration continue</strong>",
   "KLM_QUOTE_AUTHOR": "Consultant senior en test de performance @ KLM",
@@ -77,5 +78,22 @@
   "KLM_SUBTITLE_5": "Un feedback permanent durant le rush",
   "KLM_CONTENT_5": "<p>Lors de la réalisation de tests de performance, les métriques Gatling sont envoyées dans Graphite, avec les métriques du système d’exploitation et de la Java Virtual Machine des applications testées. Les résultats de test sont ensuite analysés et comparés automatiquement, en utilisant une application de tableau de bord développée en propre. Les tests Gatling peuvent être déclenchés depuis le cycle de développement, donnant un feedback permanent de la performance d’une application durant le rush.</p>",
   "KLM_SUBTITLE_6": "Gatling, l’outil de test de performance de référence chez KLM",
-  "KLM_CONTENT_6": "<p>Durant les mois précédents, toutes les applications web principales ont migré leurs tests de performance vers Gatling, faisant de fait de Gatling l’outil de test de performance de référence chez KLM.</p>"
+  "KLM_CONTENT_6": "<p>Durant les mois précédents, toutes les applications web principales ont migré leurs tests de performance vers Gatling, faisant de fait de Gatling l’outil de test de performance de référence chez KLM.</p>",
+
+  "BC_TITLE": "Témoignage d'une société Britannique",
+  "BC_QUOTE": "Nous pensons que Gatling favorise la collaboration avec les équipes produit tout au long du processus de test de charge",
+  "BC_QUOTE_AUTHOR": "Equipe de test de charge du Digital",
+  "BC_CONTENT_0": "<p>L’équipe de test de charge du Digital ainsi que différentes équipes produit intègrent Gatling dans leur phase de test de charge.</p>",
+  "BC_SUBTITLE_1": "Why Gatling?",
+  "BC_CONTENT_1": "<p>Il y a trois raisons principales qui nous ont fait choisir Gatling :<ol><li>Le DSL http</li><li>Les rapports</li><li>Son modèle de programmation concurrente</li></ol></p>",
+  "BC_SUBTITLE_2": "HTTP DSL",
+  "BC_CONTENT_2": "<p>Il y a de nombreux outils de test de charge qui ne permettent aux tests d’être rédigés qu’avec une interface graphique ou des fichiers XML. Nous cherchions des scripts de tests qui soient faciles à comprendre et qui pouvaient être envoyés dans un système de gestion des versions.</p>",
+  "BC_SUBTITLE_3": "Les Rapports",
+  "BC_CONTENT_3": "<p>Les rapports interactifs en JavaScript qui sont produits après le lancement du test sont très impressionnants et les équipes produit souhaitaient recevoir les rapports pour analyser les résultats eux-mêmes.</p><p>L’intégration avec Graphite/InfluxDB et Grafana était primordiale pour nous. Nous sommes maintenant capables de fournir des graphiques en temps réel que les équipes produit peuvent voir pendant les tirs de charge.</p>",
+  "BC_SUBTITLE_4": "Le Modèle de programmation concurrente",
+  "BC_CONTENT_4": "<p>Avec un modèle synchrone de programmation concurrente, il est nécessaire d’utiliser plusieurs machines simplement pour atteindre une centaine de requêtes par seconde. Augmentez la charge peut être difficile et onéreux lorsque l’on tire depuis le cloud. Nous sommes parvenus à atteindre un taux de concurrence élevé avec Gatling en utilisant un simple serveur Linux.</p>",
+  "BC_SUBTITLE_5": "L’Histoire",
+  "BC_CONTENT_5": "<p>Hormis moi-même, il y a deux autres testeurs dans l’équipe de test de charge du Digital, qui couvre une série de produits et de services applicatifs. Nos deux principaux outils sont Gatling et un outil propriétaire.</p><p>Nous pensons que Gatling favorise la collaboration avec les équipes produit tout au long du processus de test de charge. Tout d’abord, les exigences de performance sont rédigées sur un wiki, traduite en un script de test Gatling et envoyé sur notre Github. Le test est alors relu par un membre de l’équipe produit. C’est crucial car les développeurs n’ont pas besoin d’installer un outil de test de charge ou de se perdre dans d’interminables fichiers XML pour pouvoir relire le test. Le DSL peut être lu par tous et, régulièrement, les parties prenantes soumettent leur demande de modifications lorsqu’ils observent des cas de test concrets.</p><p>Nous avons créé des images Docker de Grafana et InfluxDB qui peuvent être lancées pour supporter, prêts à l’emploi, la création de graphiques en temps réel et le stockage des métriques. Cela permet aussi bien à nous-mêmes qu’aux équipes produit de regarder la progression des tirs et utiliser des requêtes type SQL pour extraire des données liées à des données d’une série chronologique spécifique.</p><p>Les rapports, générés automatiquement, sont archivés et mis en ligne sur un serveur pour que toutes les parties prenantes puissent y accéder.</p>",
+  "BC_SUBTITLE_6": "L’Avenir",
+  "BC_CONTENT_6": "<p>La tendance générale vers le déploiement sur le cloud a créé une nouvelle dynamique concernant le test de charge. Il y a eu une tendance à moins dépendre d’une équipe centralisée de test de charge, tirant à partir d’une infrastructure interne, vers un modèle où les développeurs et les testeurs lancent leurs propres instances et font des tests de charge eux-mêmes. Gatling est parfaitement adapté pour cela et nous commençons à aider les équipes produit pour qu’ils lancent Gatling comme une étape de l’intégration continue, en utilisant le plugin Jenkins.</p>"
 }
