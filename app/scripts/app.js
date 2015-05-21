@@ -64,6 +64,15 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
         suffix: '.json'
       })
       .determinePreferredLanguage(function () {
-        return 'en';
+        var language = navigator.language || navigator.userLanguage;
+        switch (language.substring(0,2)){
+          case 'fr' :
+            return 'fr';
+            break;
+
+          default:
+            return 'en';
+            break;
+        }
       });
 }]);
