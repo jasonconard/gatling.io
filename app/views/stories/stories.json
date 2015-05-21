@@ -6,11 +6,11 @@
     },
     {
       "url": "media",
-      "title": "User Story within a British Company"
+      "title": "BC_TITLE"
     },
     {
       "url": "open-xchange",
-      "title": "Open-Xchange User Story"
+      "title": "OX_TITLE"
     }
   ]
 }

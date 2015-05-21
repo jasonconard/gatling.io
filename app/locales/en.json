@@ -4,6 +4,7 @@
   "DOCUMENTATION": "DOCUMENTATION",
   "PROFESSIONAL_SERVICES": "PROFESSIONAL SERVICES",
   "FOOTER": "Gatling is an open-source load testing framework based on <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>",
+
   "HOME_HEADER_TITLE": "is an open-source load testing framework based on <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>",
   "HOME_HEADER_SUBTITLE1": "High performance",
   "HOME_HEADER_SUBTITLE2": "Ready-to-present HTML reports",
@@ -23,6 +24,7 @@
   "HOME_USE_GATLING": "They use Gatling",
   "HOME_NEWS_HAPPY_NEW_YEAR": "Gatling's team wishes you a happy new year!",
   "HOME_NEWS_VERSION": "Gatling {{version}} is out!",
+
   "PRO_TITLE": "Gatling Professional Services",
   "PRO_CONTACT": "All services are provided by <strong>Gatling's development team</strong>. Contact us at",
   "PRO_SUPPORT_DURATION": "Duration",
@@ -76,5 +78,33 @@
   "KLM_SUBTITLE_6": "Gatling, the standard performance test tool within KLM",
   "KLM_CONTENT_6": "<p>In the last few months all the major web applications have migrated their performance tests to Gatling, making this <strong>the de facto standard performance test tool within KLM</strong>.</p>",
   "KLM_QUOTE": "Gatling helps KLM to move from a project oriented to a <strong>continuous delivery organization</strong>.",
-  "KLM_QUOTE_AUTHOR": "Senior performance test consultant @ KLM"
+  "KLM_QUOTE_AUTHOR": "Senior performance test consultant @ KLM",
+
+  "BC_TITLE": "User Story within a British Company",
+  "BC_CONTENT_0": "<p>Both the Digital Load Test Team and various product teams use Gatling as a <strong>core part of our load testing effort</strong>.</p>",
+  "BC_SUBTITLE_1": "Why Gatling?",
+  "BC_CONTENT_1": "<p>There are <strong>three major factors</strong> that attracted us to Gatling:</p><ol><li>The HTTP DSL</li><li>The reporting</li><li>Its concurrency model</li></ol>",
+  "BC_SUBTITLE_2": "HTTP DSL",
+  "BC_CONTENT_2": "<p>There are a number of load-test tools that only allow tests to be written in the GUI or through XML files. <strong>We wanted test-scripts that were easily understandable</strong> and that could be committed to a version control system.</p>",
+  "BC_SUBTITLE_3": "Reporting",
+  "BC_CONTENT_3": "<p><strong>The interactive JavaScript reports</strong> that are produced after the test run are <strong>extremely impressive</strong> and product teams have been keen to receive the reports and analyse the results themselves.</p> <p>The <strong>integration with Graphite/InfluxDB and Grafana</strong> was also key for us as we are now able to provide <strong>real-time graphing</strong> for product teams to view during the test run.</p>",
+  "BC_SUBTITLE_4": "Concurrency Model",
+  "BC_CONTENT_4": "<p>With a synchronous concurrency model it is necessary to use multiple machines just to achieve several hundred requests per second. Scaling-out can be tricky to manage and costly when running from The Cloud. We have managed to achieve a <strong>high concurrency rate with Gatling using only a modest GNU/Linux box</strong>.</p>",
+  "BC_SUBTITLE_5": "The Story",
+  "BC_CONTENT_5": " <p>Apart from myself there are two other load-testers in the Digital Load Test Team who cover an array of application products and services. Our two main tools include Gatling and a proprietary tool.</p><p>We feel that <strong>Gatling encourages collaboration with product teams throughout the load-testing process</strong>. Firstly, performance requirements are written on a wiki, translated into a Gatling test script and then pushed to our <a href=\"https://github.com/bbc/gatling-load-tests\">Github repository</a>. Here the test is reviewed by a member of the product team. This is important because the developers do not need to install a load-test tool or wade through masses of XML in order to review the test. <strong>The DSL can be read by all</strong> and invariably changes are requested by stakeholders when a concrete test is seen.</p><p>We have created <a href=\"https://github.com/bbc/gatling-load-tests#grafanainfluxdb\">Grafana and InfluxDB Docker images</a> that can be run to receive out-of-the-box real-time graphing and metric storage. This allows both ourselves and our product teams to view the progress of the test run and use SQL like queries to retrieve data related to specific time series data.</p><p>The automatic generated reports are tarballed and uploaded to a server for stakeholders to access.</p>",
+  "BC_SUBTITLE_6": "The Future",
+  "BC_CONTENT_6": "<p>The general tendency towards Cloud deployments has led to a new dynamic with regards to load-testing. There has been a tendency to rely less on a centralised load-test team running on an internal infrastructure towards a model where developers and testers are spinning up instances and running load-tests themselves. Gatling is a perfect fit for this and <strong>we are starting to help product teams run Gatling as part of their Continuous Delivery pipeline</strong> utilising the <a href=\"https://wiki.jenkins-ci.org/display/JENKINS/Gatling+Plugin\">Gatling Jenkins plugin.</a></p>",
+  "BC_QUOTE": "We feel that <strong>Gatling encourages collaboration with product teams throughout the load-testing process</strong>.",
+  "BC_QUOTE_AUTHOR": "Digital Load Test Team",
+
+  "OX_TITLE": "Open-Xchange User Story",
+  "OX_CONTENT_0": "<p>Open-Xchange is committed to deliver the <strong>most scalable, modern and trusted web-based collaboration and productivity solutions</strong> to the smartest companies.</p><p><strong>Our focus on multi-million user installations</strong> at the hosting and telco segment introduces a natural requirement on <strong>rigorous load and stress testing</strong>.</p><p>Using Gatling at our <strong>continuous integration workflow</strong> makes sure that regressions with regards to performance are <strong>spotted early</strong> during the development cycle.</p><p>Uncovering architectural weaknesses as soon as possible is invaluable when building complex applications.</p>",
+  "OX_SUBTITLE_1": "Great flexibility, efficiency and integration",
+  "OX_CONTENT_1": "<p><strong>Gatling has very quickly replaced legacy load testing tools</strong> by providing <strong>great flexibility, efficiency and integration</strong> to our existing processes and test environments.</p><p>Removing some of the <strong>bottle-necks</strong> of API load testing allowed us to achieve more comprehensive and relevan results.</p><p>Combining those benefits and improved acceptance of load testing within development teams, led to a significant increase in software quality and customer satisfaction.</p><p>At the same time, we experienced a <strong>~150x enhancement</strong> in efficiency regarding test execution, <strong>bringing down our investments on load testing dramatically.</strong></p>",
+  "OX_SUBTITLE_2": "Focus on integration",
+  "OX_CONTENT_2": "<p>We're using Gatling in combination with other well respected components such as <strong>Grafana, collectd, jmxtrans and InfluxDB</strong> to not only fetch and store load test data, but extract meaningful information which helps us optimizing our products.</p><p><strong>The flexibility of Gatling</strong> allowed us to adapt load testing <strong>to both open and proprietary web application protocols</strong> while using a common framework to <strong>avoid costs of re-engineering functionality or test data for other projects</strong>.</p>",
+  "OX_SUBTITLE_3": "Dedicated on-site training",
+  "OX_CONTENT_3": "<p>Both the community and commercial professional services offerings were extremely valuable to support the transition and continued integration of Gatling to our teams’ daily work.</p><p>The response times and quality of support from the Gatling community were exceptional.</p><p><strong>Dedicated on-site training sessions with our DevOps, Development, QA and Services staff helped to spread adoption, gaining expertise and review existing implementations.</strong></p>",
+  "OX_QUOTE": "We experienced a ~150x enhancement in efficiency regarding test execution, <strong>bringing down our investments on load testing dramatically.</strong>.",
+  "OX_QUOTE_AUTHOR": "Head of Quality Assurance @ Open-Xchange"
 }
