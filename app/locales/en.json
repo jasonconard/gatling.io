@@ -106,5 +106,8 @@
   "OX_SUBTITLE_3": "Dedicated on-site training",
   "OX_CONTENT_3": "<p>Both the community and commercial professional services offerings were extremely valuable to support the transition and continued integration of Gatling to our teams’ daily work.</p><p>The response times and quality of support from the Gatling community were exceptional.</p><p><strong>Dedicated on-site training sessions with our DevOps, Development, QA and Services staff helped to spread adoption, gaining expertise and review existing implementations.</strong></p>",
   "OX_QUOTE": "We experienced a ~150x enhancement in efficiency regarding test execution, <strong>bringing down our investments on load testing dramatically.</strong>.",
-  "OX_QUOTE_AUTHOR": "Head of Quality Assurance @ Open-Xchange"
+  "OX_QUOTE_AUTHOR": "Head of Quality Assurance @ Open-Xchange",
+
+  "STORY_TRAVEL": "TRAVEL",
+  "STORY_BC_DESCRIPTION": "<p>There has been a tendency to rely less on a centralised load-test team running on an internal infrastructure towards a model where developers and testers are spinning up instances and running load-tests themselves.</p><p>Gatling is a perfect fit for this and <strong>we are starting to help product teams run Gatling as part of their Continuous Delivery pipeline</strong> utilising the Gatling Jenkins plugin.</p>"
 }
