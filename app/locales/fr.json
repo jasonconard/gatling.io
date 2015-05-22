@@ -84,7 +84,7 @@
   "BC_QUOTE": "Nous pensons que <strong>Gatling favorise la collaboration avec les équipes produit tout au long du processus de test de charge</strong>",
   "BC_QUOTE_AUTHOR": "Equipe de test de charge du Digital",
   "BC_CONTENT_0": "<p>L’équipe de test de charge du Digital ainsi que différentes équipes produit intègrent Gatling <strong>dans leur phase de test de charge</strong>.</p>",
-  "BC_SUBTITLE_1": "Why Gatling?",
+  "BC_SUBTITLE_1": "Pourquoi Gatling ?",
   "BC_CONTENT_1": "<p>Il y a <strong>trois raisons principales</strong> qui nous ont fait choisir Gatling :<ol><li>Le DSL http</li><li>Les rapports</li><li>Son modèle de programmation concurrente</li></ol></p>",
   "BC_SUBTITLE_2": "HTTP DSL",
   "BC_CONTENT_2": "<p>Il y a de nombreux outils de test de charge qui ne permettent aux tests d’être rédigés qu’avec une interface graphique ou des fichiers XML. <strong>Nous cherchions des scripts de tests qui soient faciles à comprendre</strong> et qui pouvaient être envoyés dans un système de gestion des versions.</p>",
