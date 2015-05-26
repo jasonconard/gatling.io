@@ -105,7 +105,7 @@
   "OX_CONTENT_2": "<p>We're using Gatling in combination with other well respected components such as <strong>Grafana, collectd, jmxtrans and InfluxDB</strong> to not only fetch and store load test data, but extract meaningful information which helps us optimizing our products.</p><p><strong>The flexibility of Gatling</strong> allowed us to adapt load testing <strong>to both open and proprietary web application protocols</strong> while using a common framework to <strong>avoid costs of re-engineering functionality or test data for other projects</strong>.</p>",
   "OX_SUBTITLE_3": "Dedicated on-site training",
   "OX_CONTENT_3": "<p>Both the community and commercial professional services offerings were extremely valuable to support the transition and continued integration of Gatling to our teams’ daily work.</p><p>The response times and quality of support from the Gatling community were exceptional.</p><p><strong>Dedicated on-site training sessions with our DevOps, Development, QA and Services staff helped to spread adoption, gaining expertise and review existing implementations.</strong></p>",
-  "OX_QUOTE": "We experienced a ~150x enhancement in efficiency regarding test execution, <strong>bringing down our investments on load testing dramatically.</strong>.",
+  "OX_QUOTE": "We experienced a ~150x enhancement in resource usage regarding test execution, <strong>bringing down our investments on load testing dramatically.</strong>.",
   "OX_QUOTE_AUTHOR": "Head of Quality Assurance @ Open-Xchange",
 
   "STORY_TRAVEL": "TRAVEL",
