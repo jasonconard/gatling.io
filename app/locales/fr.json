@@ -64,6 +64,11 @@
   "PRO_DEV_CONTENT": "Travaillez avec <strong>les experts Gatling!</strong>",
   "PRO_GET_IN_TOUCH": "Une seule adresse pour nous contacter :",
 
+  "DOWNLOAD_LATEST_RELEASE":"Dernière version",
+  "DOWNLOAD_LATEST_SNAPSHOT":"Dernière snapshot",
+  "DOWNLOAD_SNAPSHOT_AVAILABLE":"Les snapshots sont disponibles ici ",
+  "USING":"Avec ",
+
   "KLM_TITLE": "KLM",
   "KLM_QUOTE": "Gatling aide KLM à passer d’un mode d’organisation par projets à <strong>l’intégration continue</strong>",
   "KLM_QUOTE_AUTHOR": "Consultant senior en test de performance @ KLM",

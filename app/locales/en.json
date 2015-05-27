@@ -64,6 +64,11 @@
   "PRO_DEV_CONTENT": "<strong>Get the experts</strong> on your side!",
   "PRO_GET_IN_TOUCH": " One way to get in touch with us:",
 
+  "DOWNLOAD_LATEST_RELEASE":"Latest release",
+  "DOWNLOAD_LATEST_SNAPSHOT":"Latest snapshot",
+  "DOWNLOAD_SNAPSHOT_AVAILABLE":"Snapshots are available in ",
+  "USING":"Using ",
+
   "KLM_TITLE": "KLM User Story",
   "KLM_SUBTITLE_1": "The big picture",
   "KLM_CONTENT_1": "<p><strong>Gatling helps KLM to move from a project oriented to a continuous delivery organization</strong> by enabling the integration of load and performance testing into the continuous delivery process.</p><p>Being a <strong>developer friendly tool</strong>, that integrates well with other development tools used at KLM, Gatling was quickly adopted by developers in the product teams.</p><p>By integrating performance tests in the delivery pipeline, the teams get <strong>daily feedback on performance during a sprint</strong>, so that they can detect and solve issues early in the development process.</p>",
